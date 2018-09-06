@@ -1,6 +1,8 @@
 Site.portfolio = {
     init: function() {
-
+        
+    },
+    load: function($) {
         // MixItUp plugin
         // http://mixitup.io
         $('#portfoliolist').mixitup({
@@ -9,12 +11,10 @@ Site.portfolio = {
             effects: ['fade'],
             easing: 'snap',
             // call the hover effect
-            onMixEnd: filterList.hoverEffect()
+            onMixEnd: Site.portfolio.mixs()
         });
-
     },
-    hoverEffect: function() {
-
+    mixs: function() {
         // Simple parallax effect
         $('#portfoliolist .portfolio').hover(
                 function() {
@@ -30,5 +30,6 @@ Site.portfolio = {
     }
 };
 
-App.load.push(Site.portfolio.init);
+App.hook('init', Site.portfolio.init);
+App.hook('load', Site.portfolio.load);
 
