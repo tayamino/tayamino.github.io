@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -19,12 +18,7 @@ layout: default
     <li><span>Image 05</span><div></div></li>
     <li><span>Image 06</span><div></div></li>
 </ul> 
-<!-- /.slideshow --> 
-
-<!-- .wrapper --> 
 <div class="wrapper">
-
-<!--- .Content --> 
 <section class="tab-content">
 <div class="container">
 
@@ -33,18 +27,10 @@ layout: default
 <div class="col-md-12">
 
 <div class="row">   
-
-<!-- profile -->
 <div class="col-md-3 widget-profil">
 <div class="row">
-
-    <!-- Profile Image -->
     <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
-    	 
-		 
-                                
          <div class="image-holder one" id="pic_prof_1" style="display:block">
-        
                 <img class="head-image up circle" src="images/img/up.png" width="150" height="150" alt="" />
                 <img class="head-image up-left circle" src="images/img/upleft.png" width="150" height="150" alt="" />
                 <img class="head-image left circle" src="images/img/left.png" width="150" height="150" alt="" />
@@ -54,28 +40,15 @@ layout: default
                 <img class="head-image right circle" src="images/img/right.png" width="150" height="150" alt="" />
                 <img class="head-image up-right circle" src="images/img/upright.png" width="150" height="150" alt="" />
                 <img class="head-image front circle" src="images/img/front.png" width="150" height="150" alt="" />
-                
         </div>
-        
-        <!-- style for simple image profile -->		
    		<div class="circle-img" id="pic_prof_2" style="display:none"></div>
-       
-    
     </div>
-    <!-- End Profile Image -->
-  
-    <!-- Begin profile information -->
     <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
-        <!-- Profile info -->
         <div id="profile_info">
             <h1 id="name" class="transition-02">{{ site.yourname }}</h1>
             <h4 class="line">{{ site.title }}</h4>
             <h6><span class="fa fa-map-marker"></span> {{ site.location }}</h6>
         </div>
-        <!-- End Profile info -->  
-    	
-        
-        <!-- Profile Description -->
         <div id="profile_desc">
             <p>
             	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac risus nibh. Donec adipiscing luctus tur
@@ -155,13 +128,11 @@ layout: default
 
 {% include /profile.html %}
 
+{% include /services.html %}
+
 {% include /cv.html %}
 
-
 {% include /portfolio.html %}
-
-
-{% include /blog.html %}
 
 {% include /contact.html %}
 
@@ -189,7 +160,7 @@ layout: default
 <!-- End wrapper -->
 
 <!-- Switcher -->
-<!-- <div id="custumize-style">
+<div id="custumize-style">
     <h2>Style Selector<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
     <div>
         <h3>Theme Color</h3>
@@ -308,7 +279,7 @@ layout: default
     </div>
 
     <div id="button-reset"><a href="#" class="button color blue boxed">Reset</a></div>
-</div> -->
+</div>
 <!-- End Switcher -->
 
 
