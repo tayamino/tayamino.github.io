@@ -18,7 +18,7 @@ var App = {
                 console.log("Failed initializing : ", hnd, ex);
             }
         }
-    };
+    },
     objs: {
         events: {},
     },
