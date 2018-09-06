@@ -12,8 +12,10 @@ var App = {
         for (var i=0 ; i<App.objs.events[event].length ; i++) {
             hnd = App.objs.events[event][i];
 
+            args = args || [];
+
             try {
-                hnd.call(args);
+                hnd(args[0]);
             } catch (ex) {
                 console.log("Failed initializing : ", hnd, ex);
             }
