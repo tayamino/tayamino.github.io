@@ -14,8 +14,8 @@ var App = {
 
             try {
                 hnd.call(args);
-            } catch {
-                console.log("Failed initializing : " + hnd);
+            } catch (ex) {
+                console.log("Failed initializing : ", hnd, ex);
             }
         }
     };
