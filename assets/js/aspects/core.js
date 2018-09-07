@@ -6,13 +6,11 @@ var App = {
 
         App.objs.events[event].push(callback);
     },
-    slot: function (event, args) {
+    slot: function (event, args=[]) {
         var hnd;
 
         for (var i=0 ; i<App.objs.events[event].length ; i++) {
             hnd = App.objs.events[event][i];
-
-            args = args || [];
 
             try {
                 hnd(args[0]);
