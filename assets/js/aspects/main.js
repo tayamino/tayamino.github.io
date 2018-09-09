@@ -147,6 +147,7 @@ App.hook('load', function($) {
     });
 }, "prettyPhoto");
 
+/*
 App.hook('load', function($) {
     var map;
     function initialize() {
@@ -168,6 +169,7 @@ App.hook('load', function($) {
         });
     }
 }, "Google Maps");
+//*/
 
 App.hook('load', function($) {
     $('input:radio[name=page_builder]').on('change', function() {
