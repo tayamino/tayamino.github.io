@@ -1,6 +1,6 @@
 Site.portfolio = {
     init: function() {
-        App.data.vues.push('portfolio');
+        App.vues.push('portfolio');
 
         App.data.portfolio = {
             category: [
