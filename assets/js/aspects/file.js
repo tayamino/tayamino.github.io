@@ -1,6 +1,6 @@
 Site.skillbar = {
     init: function() {
-        App.data.vues.push('resume');
+        App.vues.push('resume');
 
         App.data.resume = {
             skills: [
