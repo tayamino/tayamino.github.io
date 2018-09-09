@@ -24,12 +24,11 @@ var App = {
     },
     objs: {
         events: {},
+        mouseX: null,
+        mouseY: null,
+        imageH: null,
     },
     init: function () {
-        var mouseX;
-        var mouseY;
-        var imageOne;
-
         /* Calling the initialization function */
         $(init);
 
@@ -46,26 +45,25 @@ var App = {
         function init() {
 
             /* Instanciate the mouse position variables */
-            mouseX = 0;
-            mouseY = 0;
+            App.objs.mouseX = 0;
+            App.objs.mouseY = 0;
 
             /* Instanciate a HeadImage class for every image */
-            imageOne = new HeadImage("one");
+            App.objs.imageH = new HeadImage("one");
 
         }
 
         /* This function is called on mouse move and gets the mouse position. 
-         * It also calls the HeadImage function to display the correct image*/
+         * It also  calls the HeadImage function to display the correct image*/
         function getMousePosition(event) {
 
             /* Setting the mouse position variables */
-            mouseX = event.pageX;
-            mouseY = event.pageY;
+            App.objs.mouseX = event.pageX;
+            App.objs.mouseY = event.pageY;
 
             /*Calling the setImageDirection function of the HeadImage class
              * to display the correct image*/
-            imageOne.setImageDirection();
-
+            App.objs.imageH.setImageDirection();
         }
 
         App.slot('init');
