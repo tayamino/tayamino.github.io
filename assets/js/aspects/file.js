@@ -3,24 +3,30 @@ Site.skillbar = {
         App.vues.push('resume');
 
         App.data.resume = {
-            skills: [
-                { title: "Web skills", group: [
+            skill: [
+                { title: "Programming", group: [
 { title: 'PHP 7.0+', metrise: '100%' },
 { title: 'Wordpress', metrise: '95%' },
 { title: 'Django', metrise: '65%' },
 { title: 'Laravel', metrise: '35%' },
                 ] },
-                { title: "Programming skills", group: [
+                { title: "Web skills", group: [
+{ title: 'HTML 5', metrise: '100%' },
+{ title: 'CSS 3', metrise: '95%' },
+{ title: 'Javascript', metrise: '65%' },
+{ title: 'Vue.js', metrise: '35%' },
+                ] },
+                { title: "Platforms", group: [
 { title: 'PHP 7.0+', metrise: '100%' },
 { title: 'Wordpress', metrise: '95%' },
 { title: 'Django', metrise: '65%' },
 { title: 'Laravel', metrise: '35%' },
                 ] },
             ],
-            projects: [
-{ label: 'logo',      title: 'Project #1', cover: 'images/portfolio/1.jpg', cycle: "2008", links: { web: "" } },
-{ label: 'catWeb',    title: 'Project #2', cover: 'images/portfolio/2.jpg', cycle: "2010", links: { web: "" } },
-{ label: 'catMotion', title: 'Project #3', cover: 'images/portfolio/3.jpg', cycle: "2012", links: { web: "" } },
+            where: [
+{ owner: "Freelance",     cycle: "2009-2013", roles: ['IT Developer'], feels: "Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus." },
+{ owner: "Some company",  cycle: "2013-2015", roles: ['Web Developer'], feels: "Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus." },
+{ owner: "Other company", cycle: "2015-2018", roles: ['Front-End Developer'], feels: "Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus." },
             ],
         };
     },

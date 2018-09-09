@@ -1,7 +1,7 @@
 <div id="resume" class="content_2">
     <h1 class="h-bloc">Resume - Personal Info</h1> 
     <div class="row">
-        <div class="col-md-4" v-for="entry in skills">
+        <div class="col-md-4" v-for="entry in skill">
             <div class="title_content" style="float: none;">
                 <div class="text_content" v-html="entry.title"></div>
                 <div class="clear"></div>
@@ -20,23 +20,20 @@
                 <div class="clear"></div>
             </div>
             <ul class="attributes">
-                <li class="first">
-                    <h5>IT-Developer &amp; System Administrator <span class="duration"><i class="fa fa-calendar color"></i> 2009 - 2013</span></h5>
-                    <h6><span class="fa fa-briefcase"></span> Freelance Contractor</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                <li class="first" v-for="entry in where">
+                    <h5>
+                        <span v-for="role in entry.roles" v-html="role"></span>
+                        <span class="duration">
+                            <i class="fa fa-calendar color"></i> 
+                            <span v-html="entry.cycle"></span>
+                        </span>
+                    </h5>
+                    <h6>
+                        <span class="fa fa-briefcase"></span> 
+                        <span v-html="entry.owner"></span>
+                    </h6>
+                    <p v-html="entry.feels"></p>
                 </li>
-
-                <li class="first">
-                    <h5>Web Developer <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span></h5>
-                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-                </li>
-                <li>
-                    <h5>Front-End Developer <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
-                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-                </li>
-
             </ul>
             <br>
             <div class="title_content">
