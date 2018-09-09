@@ -1,144 +1,18 @@
 <div id="resume" class="content_2">
     <h1 class="h-bloc">Resume - Personal Info</h1> 
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4" v-for="entry in skills">
             <div class="title_content" style="float: none;">
-                <div class="text_content">Web skills</div>
+                <div class="text_content" v-html="entry.title"></div>
                 <div class="clear"></div>
             </div>
             <div class="skills">
-                <div class="skillbar clearfix" data-percent="95%">
-                    <div class="skillbar-title"><span>PHP 7.0+</span></div>
+                <div v-for="skill in entry.group" class="skillbar clearfix" v-bind:data-percent="skill.metrise">
+                    <div class="skillbar-title"><span v-html="skill.title"></span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">95%</div>
-                </div>
-                <div class="skillbar clearfix" data-percent="90%">
-                    <div class="skillbar-title"><span>WordPress</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">90%</div>
-                </div>
-                <div class="skillbar clearfix" data-percent="65%">
-                    <div class="skillbar-title"><span>Laravel</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">65%</div>
-                </div>
-                <div class="skillbar clearfix" data-percent="35%">
-                    <div class="skillbar-title"><span>Flash</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">35%</div>
+                    <div class="skill-bar-percent" v-html="skill.metrise"></div>
                 </div>
             </div>
-            <div class="title_content" style="float: none;">
-                <div class="text_content">Programming Skills</div>
-                <div class="clear"></div>
-            </div>
-            <div class="skills">
-                <div class="skillbar clearfix" data-percent="85%">
-                    <div class="skillbar-title"><span>Wordpress</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">85%</div>
-                </div>
-                <div class="skillbar clearfix" data-percent="75%">
-                    <div class="skillbar-title"><span>Joomla</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">75%</div>
-                </div>
-                <div class="skillbar clearfix" data-percent="60%">
-                    <div class="skillbar-title"><span>Drupal</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">60%</div>
-                </div>
-                <div class="skillbar clearfix" data-percent="89%">
-                    <div class="skillbar-title"><span>Php</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">89%</div>
-                </div>
-            </div>
-            <div class="title_content" style="float: none;">
-                <div class="text_content">Office Skills</div>
-                <div class="clear"></div>
-            </div>
-            <div class="skills">       
-                <div class="skillbar clearfix" data-percent="85%">
-                    <div class="skillbar-title"><span>MS Excel</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">85%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="95%">
-                    <div class="skillbar-title"><span>MS Word</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">95%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="60%">
-                    <div class="skillbar-title"><span>Powerpoint</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">60%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="40%">
-                    <div class="skillbar-title"><span>SharePoint</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">40%</div>
-                </div>
-		    </div>
-            <div class="title_content" style="float: none;">
-                <div class="text_content">Hobbies Skills</div>
-                <div class="clear"></div>
-            </div>
-            <div class="skills">
-                <div class="skillbar clearfix" data-percent="60%">
-                    <div class="skillbar-title"><span>Music</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">60%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="95%">
-                    <div class="skillbar-title"><span>Sport</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">95%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="85%">
-                    <div class="skillbar-title"><span>Reading</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">85%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="70%">
-                    <div class="skillbar-title"><span>Travelling</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">70%</div>
-                </div>
-            </div>
-            <div class="title_content" style="float: none;">
-                <div class="text_content">Language Skills</div>
-                <div class="clear"></div>
-            </div>
-            <div class="skills">
-                <div class="skillbar clearfix" data-percent="90%">
-                    <div class="skillbar-title"><span>English</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">90%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="80%">
-                    <div class="skillbar-title"><span>French</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">80%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="50%">
-                    <div class="skillbar-title"><span>Spanish</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">50%</div>
-                </div>
-                <div class="skillbar clearfix " data-percent="60%">
-                    <div class="skillbar-title"><span>Swiss</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">60%</div>
-                </div>
-            </div>
-            <div class="title_content" style="float: none;">
-                <div class="text_content">My Resume</div>
-                <div class="clear"></div>
-            </div>
-            <a class="download" style="margin:0;float: left;" target="_blank" href="http://www.doyoubuzz.com/tayaa-amine/cv/download">
-                <span data-hover="Download My Resume"><i class="glyphicon glyphicon-download-alt"></i> Download My Resume</span>
-            </a>
         </div>
         <div class="col-md-6 resume-left">    
             <div class="title_content" style="margin-bottom:5px">
