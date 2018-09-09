@@ -1,21 +1,6 @@
 var App = {
-    vues: ['profile'],
-    data: {
-        profile: {
-            who: {
-                name: "TAYAA Med Amine",
-                date: 'August 1, 1987',
-                city: "Taza, Morocco",
-                mail: 'amine@tayaa.me',
-                call: "+212 (6) 44 76 46 08",
-                link: 'amine.tayaa.me',
-            },
-            bio: [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. ",
-            ],
-        },
-    },
+    vues: [],
+    data: {},
     hook: function (event, callback) {
         if (typeof(App.objs.events[event])=='undefined') {
             App.objs.events[event] = [];
