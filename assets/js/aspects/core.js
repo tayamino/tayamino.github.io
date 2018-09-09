@@ -1,4 +1,26 @@
 var App = {
+    vues: {},
+    data: {
+        person: {
+        },
+        skills: {
+        },
+        worked: {
+            category: [
+{ name: 'catMotion', title: 'Motion creation' },
+{ name: 'catWeb',    title: 'Web sites' },
+{ name: 'logo',      title: 'Logo design' },
+            ],
+            projects: [
+{ label: 'logo',      title: 'Project #1', cover: 'images/portfolio/1.jpg', cycle: "2008" },
+{ label: 'catWeb',    title: 'Project #2', cover: 'images/portfolio/2.jpg', cycle: "2010" },
+{ label: 'catMotion', title: 'Project #3', cover: 'images/portfolio/3.jpg', cycle: "2012" },
+{ label: 'logo',      title: 'Project #4', cover: 'images/portfolio/4.jpg', cycle: "2014" },
+{ label: 'catWeb',    title: 'Project #5', cover: 'images/portfolio/5.jpg', cycle: "2016" },
+{ label: 'catMotion', title: 'Project #6', cover: 'images/portfolio/6.jpg', cycle: "2018" },
+            ],
+        },
+    },
     hook: function (event, callback) {
         if (typeof(App.objs.events[event])=='undefined') {
             App.objs.events[event] = [];
