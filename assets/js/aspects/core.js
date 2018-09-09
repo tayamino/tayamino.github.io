@@ -13,11 +13,13 @@ var App = {
             hnd = App.objs.events[event][i];
 
             hnd(args[0]);
+            /*
             try {
                 hnd(args[0]);
             } catch (ex) {
                 console.log("Failed initializing : ", hnd, ex);
             }
+            //*/
         }
     },
     objs: {
