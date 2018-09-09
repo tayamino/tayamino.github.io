@@ -85,7 +85,7 @@ var App = {
 
         App.slot('init');
     },
-    load: function (narrow, $) {
+    load: function ($) {
         var narrow = App.vues;
 
         App.vues = {};
