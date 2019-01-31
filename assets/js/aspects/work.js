@@ -9,8 +9,14 @@ Site.portfolio = {
 { name: 'logo',      text: 'Logo design' },
             ],
             projects: [
-{ label: 'logo',      title: 'Project #1', cover: 'images/portfolio/1.jpg', cycle: "2008", links: { web: "" } },
-{ label: 'catWeb',    title: 'Project #2', cover: 'images/portfolio/2.jpg', cycle: "2010", links: { web: "" } },
+{ label: 'agency',    title: 'ConnectikS', cover: 'logos/connectik.jpg', cycle: "2012", links: { web: "" } },
+{ label: 'agency',    title: 'Maher xOps', cover: 'logos/maher-ops.jpg', cycle: "2008", links: { web: "" } },
+{ label: 'agency',    title: 'Hack 2 Use', cover: 'logos/hack2use.jpg', cycle: "2008", links: { web: "" } },
+{ label: 'agency',    title: 'Enochian Design', cover: 'logos/connectik.jpg', cycle: "2012", links: { web: "" } },
+
+{ label: 'spaces',    title: 'Espace Factory', cover: 'logos/factory.jpg', cycle: "2010", links: { web: "" } },
+{ label: 'spaces',    title: 'Café Mariuno',   cover: 'logos/mariuno.jpg', cycle: "2010", links: { web: "" } },
+
 { label: 'catMotion', title: 'Project #3', cover: 'images/portfolio/3.jpg', cycle: "2012", links: { web: "" } },
 { label: 'logo',      title: 'Project #4', cover: 'images/portfolio/4.jpg', cycle: "2014", links: { web: "" } },
 { label: 'catWeb',    title: 'Project #5', cover: 'images/portfolio/5.jpg', cycle: "2016", links: { web: "" } },
