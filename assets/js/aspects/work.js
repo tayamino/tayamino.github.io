@@ -11,7 +11,7 @@ Site.portfolio = {
 { name: 'person', text: 'Personal Sites' },
             ],
             projects: [
-//{ label: 'person',    title: "Karim LACH'HAB", cover: '/images/logos/lachhab.jpg', cycle: "2010", links: { web: "" } },
+//{ label: 'person',    title: "Karim LACH'HAB", cover: '/images/logos/lachhab.png', cycle: "2010", links: { web: "" } },
             ],
         };
 
@@ -33,7 +33,7 @@ Site.portfolio = {
             App.data.portfolio.projects.push({
                 label: 'agency',
                 title: listing[i].title,
-                cover: '/images/logos/'+listing[i].alias+'.jpg',
+                cover: '/images/logos/'+listing[i].alias+'.png',
                 links: {
     web: "http://"+listing[i].alias+".portfolio.tayaa.me"
                 },
@@ -53,7 +53,7 @@ Site.portfolio = {
             App.data.portfolio.projects.push({
                 label: 'espace',
                 title: listing[i].title,
-                cover: '/images/logos/'+listing[i].alias+'.jpg',
+                cover: '/images/logos/'+listing[i].alias+'.png',
                 links: {
     web: "http://"+listing[i].alias+".portfolio.tayaa.me"
                 },
