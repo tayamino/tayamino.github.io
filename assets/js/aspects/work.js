@@ -30,7 +30,7 @@ Site.portfolio = {
         }];
 
         for (var i=0 ; i<listing.length ; i++) {
-            App.data.portfolio.projects.append({
+            App.data.portfolio.projects.push({
                 label: 'agency',
                 title: listing[i].title,
                 cover: '/images/logos/'+listing[i].alias+'.jpg',
@@ -50,7 +50,7 @@ Site.portfolio = {
         }];
 
         for (var i=0 ; i<listing.length ; i++) {
-            App.data.portfolio.projects.append({
+            App.data.portfolio.projects.push({
                 label: 'espace',
                 title: listing[i].title,
                 cover: '/images/logos/'+listing[i].alias+'.jpg',
