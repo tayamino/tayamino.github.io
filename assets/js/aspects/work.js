@@ -2,27 +2,64 @@ Site.portfolio = {
     init: function() {
         App.vues.push('portfolio');
 
+        var listing;
+
         App.data.portfolio = {
             category: [
-{ name: 'catMotion', text: 'Motion creation' },
-{ name: 'catWeb',    text: 'Web sites' },
-{ name: 'logo',      text: 'Logo design' },
+{ name: 'agency',  text: 'Digital Agency' },
+{ name: 'espace', text: 'Web Sites' },
+{ name: 'person', text: 'Personal Sites' },
             ],
             projects: [
-{ label: 'agency',    title: 'ConnectikS', cover: 'logos/connectik.jpg', cycle: "2012", links: { web: "" } },
-{ label: 'agency',    title: 'Maher xOps', cover: 'logos/maher-ops.jpg', cycle: "2008", links: { web: "" } },
-{ label: 'agency',    title: 'Hack 2 Use', cover: 'logos/hack2use.jpg', cycle: "2008", links: { web: "" } },
-{ label: 'agency',    title: 'Enochian Design', cover: 'logos/connectik.jpg', cycle: "2012", links: { web: "" } },
-
-{ label: 'spaces',    title: 'Espace Factory', cover: 'logos/factory.jpg', cycle: "2010", links: { web: "" } },
-{ label: 'spaces',    title: 'Café Mariuno',   cover: 'logos/mariuno.jpg', cycle: "2010", links: { web: "" } },
-
-{ label: 'catMotion', title: 'Project #3', cover: 'images/portfolio/3.jpg', cycle: "2012", links: { web: "" } },
-{ label: 'logo',      title: 'Project #4', cover: 'images/portfolio/4.jpg', cycle: "2014", links: { web: "" } },
-{ label: 'catWeb',    title: 'Project #5', cover: 'images/portfolio/5.jpg', cycle: "2016", links: { web: "" } },
-{ label: 'catMotion', title: 'Project #6', cover: 'images/portfolio/6.jpg', cycle: "2018", links: { web: "" } },
+//{ label: 'person',    title: "Karim LACH'HAB", cover: '/images/logos/lachhab.jpg', cycle: "2010", links: { web: "" } },
             ],
         };
+
+        listing = [{
+/*
+            cycle: "2012", alias: 'connectik',  title: "Connectik Services"
+        },{
+//*/
+            cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
+        },{
+            cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
+        },{
+            cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
+        },{
+            cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
+        }];
+
+        for (var i=0 ; i<listing.length ; i++) {
+            App.data.portfolio.projects.append({
+                label: 'agency',
+                title: listing[i].title,
+                cover: '/images/logos/'+listing[i].alias+'.jpg',
+                links: {
+    web: "http://"+listing[i].alias+".portfolio.tayaa.me"
+                },
+                cycle: listing[i].cycle,
+            });
+        }
+
+        listing = [{
+            cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
+        },{
+            cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
+        },{
+            cycle: "2016", alias: 'park-adventure',  title: "Park Adventure"
+        }];
+
+        for (var i=0 ; i<listing.length ; i++) {
+            App.data.portfolio.projects.append({
+                label: 'espace',
+                title: listing[i].title,
+                cover: '/images/logos/'+listing[i].alias+'.jpg',
+                links: {
+    web: "http://"+listing[i].alias+".portfolio.tayaa.me"
+                },
+                cycle: listing[i].cycle,
+            });
+        }
     },
     load: function($) {
         // MixItUp plugin
