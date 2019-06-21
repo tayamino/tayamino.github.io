@@ -4,7 +4,7 @@ Site.skillbar = {
 
         App.data.resume = {
             experience: [
-{ owner: "Dev Freelancer",     cycle: "2008-2010", roles: ['IT Developer'], feels: "", detail: [
+{ owner: "Dev Freelancer",     cycle: "2008 - 2010", roles: ['IT Developer'], feels: "", detail: [
   "Various experiences working as a consultant with startups (Skills : Linux, Shell, Python, NoSQL, ETL, ...)",
   "Valuable experience working on End-to-End Web projects",
   "Freelancing (small jobs). Including: PHP, MySQL, Windows and Linux servers.",
@@ -20,7 +20,7 @@ Site.skillbar = {
 { owner: "Web Freelancer",     cycle: "2011", roles: ['Web Developer'], feels: "Mostly jobs in WordPress, Prestashop and related web technologies. ", detail: [
 
 ] },
-{ owner: "Connectik Services", cycle: "2011-2012", roles: ['Founder','CTO'], feels: "", detail: [
+{ owner: "Connectik Services", cycle: "2011 - 2012", roles: ['Founder','CTO'], feels: "", detail: [
   "ASP.NET / C# / VB.NET",
   "Python (mainly Django and related)",
   "PHP 5 / jQuery / WordPress",
@@ -34,7 +34,7 @@ Site.skillbar = {
   "Developping custom crawlers for the news team of the website (5 journalists dispatching the data through XMPP/Web-UI).",
   "Deployment & Supervision of cloud-based instances (web server / cloud desktops / backoffice instances)",
 ] },
-{ owner: "Enochian Designs",   cycle: "2014-2015", roles: ['Co-Founder','CTO'], feels: "", detail: [
+{ owner: "Enochian Designs",   cycle: "2014 - 2015", roles: ['Co-Founder','CTO'], feels: "", detail: [
   "Web-based Business Applications (Django + Analytics + Reporting)",
   "Custom Dashboards (TWBT + Flask/Django/Slim-PHP)",
   "Adopting the '12-factor app' principles, resulting in a full xAAS deployments (OpenShift / Heroku / EC2+Ansible)",
@@ -42,17 +42,17 @@ Site.skillbar = {
   "BASH / PHP 7 / Python 2.7 / Node.JS",
   "HTML5 / CSS3 / D3",
 ] },
-{ owner: "Varaa Solutions",    cycle: "2016-2017", roles: ['Developer','Maker'], feels: "", detail: [
+{ owner: "Varaa Solutions",    cycle: "2016 - 2017", roles: ['Developer','Maker'], feels: "", detail: [
 
 ] },
-{ owner: "IoT Freelancer",     cycle: "2017-2018", roles: ['Developer','Maker'], feels: "Democratization of IoT technologies and products was a golden opportunity to practice what I've been preaching my self to do.", detail: [
+{ owner: "IoT Freelancer",     cycle: "2017 - 2018", roles: ['Developer','Maker'], feels: "Democratization of IoT technologies and products was a golden opportunity to practice what I've been preaching my self to do.", detail: [
 
 ] },
             ],
             education: [
-{ owner: "Lycee Ibn Barri", cycle: "2004-2005", degree: "Baccalaureat", track: "Sciences Ex" },
-{ owner: "E.M.S.I Rabat",   cycle: "2005-2007", degree: "Ingenieur",    track: "Automatisme &amp; Informatique Industrielle" },
-{ owner: "PIGIER Taza",     cycle: "2007-2009", degree: "Technicien",   track: "Gestion Informatique" },
+{ owner: "PIGIER Taza",     cycle: "2007 - 2009", degree: "Technicien",      track: "Gestion Informatique" },
+{ owner: "E.M.S.I Rabat",   cycle: "2005 - 2007", degree: "Cycle Ingenieur", track: "Automatisme &amp; Informatique Industrielle" },
+{ owner: "Lycee Ibn Barri", cycle: "2004 - 2005", degree: "Baccalaureat",    track: "Sciences Ex" },
             ],
             competence: [
                 { title: "Programming", group: [

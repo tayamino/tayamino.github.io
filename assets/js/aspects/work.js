@@ -50,8 +50,8 @@ Site.portfolio = {
             }],
         };
 
-        for (var j=0 ; j<App.data.portfolio.length ; j++) {
-            var categ = App.data.portfolio[j].name;
+        for (var j=0 ; j<App.data.portfolio.category.length ; j++) {
+            var categ = App.data.portfolio.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
                 App.data.portfolio.projects.push({
