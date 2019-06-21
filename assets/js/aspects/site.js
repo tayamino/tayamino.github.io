@@ -13,8 +13,7 @@ var Site = {
                     link: 'amine.tayaa.me',
                 },
                 bio: [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis.",
+                    "Passionate Self-Learner looking to promote the adoption &amp; usage of Technology in the everyday life of everyone.",
                 ],
             };
         },
