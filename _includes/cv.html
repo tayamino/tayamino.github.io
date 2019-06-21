@@ -37,37 +37,24 @@
             </ul>
             <br>
         </div>
-        <div class="col-md-3">
-            <div class="title_content" style="float: none;">
-                <div class="text_content"></div>
-                <div class="clear"></div>
-            </div>
-            <div class="skills">
-                <div v-for="skill in entry.group" class="skillbar clearfix" v-bind:data-percent="skill.metrise">
-                    <div class="skillbar-title"><span v-html="skill.title"></span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent" v-html="skill.metrise"></div>
-                </div>
-            </div>
-        </div>
         <div class="col-md-6 resume-right">
             <div class="title_content">
                 <div class="text_content">Education</div>
                 <div class="clear"></div>
             </div>
             <ul class="attributes">
-                <li class="first" v-for="step in education">
+                <li class="first" v-for="item in education">
                     <h5>
-                      <span v-html="step.track"></span>
+                      <span v-html="item.track"></span>
                       <i class="fa fa-calendar color"></i>
-                      <span class="duration" v-html="step.cycle"></span>
+                      <span class="duration" v-html="item.cycle"></span>
                     </h5>
                     <h6>
-                      <span v-html="step.degree"></span>
+                      <span v-html="item.degree"></span>
                       <i class="fa fa-book"></i>
-                      <span v-html="step.where"></span>
+                      <span v-html="item.where"></span>
                     </h6>
-                    <p v-html="step.feels"></p>
+                    <p v-html="item.feels"></p>
                 </li>
             </ul>
             <br>
