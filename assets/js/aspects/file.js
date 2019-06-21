@@ -3,7 +3,7 @@ Site.skillbar = {
         App.vues.push('resume');
 
         App.data.resume = {
-            where: [
+            experience: [
 { owner: "Dev Freelancer",     cycle: "2008-2010", roles: ['IT Developer'], feels: "", detail: [
   "Various experiences working as a consultant with startups (Skills : Linux, Shell, Python, NoSQL, ETL, ...)",
   "Valuable experience working on End-to-End Web projects",
@@ -49,12 +49,12 @@ Site.skillbar = {
 
 ] },
             ],
-            cours: [
+            education: [
 { owner: "Lycee Ibn Barri", cycle: "2004-2005", degree: "Baccalaureat", track: "Sciences Ex" },
 { owner: "E.M.S.I Rabat",   cycle: "2005-2007", degree: "Ingenieur",    track: "Automatisme &amp; Informatique Industrielle" },
 { owner: "PIGIER Taza",     cycle: "2007-2009", degree: "Technicien",   track: "Gestion Informatique" },
             ],
-            skill: [
+            competence: [
                 { title: "Programming", group: [
 { title: 'Python 2.7', metrise: '100%' },
 { title: 'PHP 7.x', metrise: '75%' },

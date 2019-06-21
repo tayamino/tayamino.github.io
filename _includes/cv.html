@@ -1,7 +1,7 @@
 <div id="resume" class="content_2">
     <h1 class="h-bloc">Resume - Personal Info</h1>
     <div class="row">
-        <div class="col-md-3" v-for="entry in skill">
+        <div class="col-md-3" v-for="entry in competence">
             <div class="title_content" style="float: none;">
                 <div class="text_content" v-html="entry.title"></div>
                 <div class="clear"></div>
@@ -20,7 +20,7 @@
                 <div class="clear"></div>
             </div>
             <ul class="attributes">
-                <li class="first" v-for="entry in where">
+                <li class="first" v-for="entry in experience">
                     <h5>
                         <span v-for="role in entry.roles" v-html="role"></span>
                         <span class="duration">
@@ -56,7 +56,7 @@
                 <div class="clear"></div>
             </div>
             <ul class="attributes">
-                <li class="first" v-for="step in cours">
+                <li class="first" v-for="step in education">
                     <h5>
                       <span v-html="step.track"></span>
                       <i class="fa fa-calendar color"></i>
