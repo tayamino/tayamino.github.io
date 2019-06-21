@@ -56,18 +56,18 @@
                 <div class="clear"></div>
             </div>
             <ul class="attributes">
-                <li class="first" v-for="entry in cours">
+                <li class="first" v-for="step in cours">
                     <h5>
-                      <span v-html="entry.track"></span>
+                      <span v-html="step.track"></span>
                       <i class="fa fa-calendar color"></i>
-                      <span class="duration" v-html="entry.cycle"></span>
+                      <span class="duration" v-html="step.cycle"></span>
                     </h5>
                     <h6>
-                      <span v-html="entry.degree"></span>
+                      <span v-html="step.degree"></span>
                       <i class="fa fa-book"></i>
-                      <span v-html="entry.where"></span>
+                      <span v-html="step.where"></span>
                     </h6>
-                    <p v-html="entry.feels"></p>
+                    <p v-html="step.feels"></p>
                 </li>
             </ul>
             <br>
