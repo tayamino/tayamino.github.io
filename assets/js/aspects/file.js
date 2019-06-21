@@ -12,6 +12,11 @@ Site.skillbar = {
 { owner: "Varaa Solutions",    cycle: "2016-2017", roles: ['Developer','Maker'], feels: "Democratization of IoT technologies and products was a golden opportunity to practice what I've been preaching my self to do." },
 { owner: "IoT Freelancer",     cycle: "2017-2018", roles: ['Developer','Maker'], feels: "" },
             ],
+            cours: [
+{ owner: "Lycee Ibn Barri", cycle: "2004-2005", degree: "Baccalaureat", track: "Sciences Ex" },
+{ owner: "E.M.S.I Rabat",   cycle: "2005-2007", degree: "Ingenieur",    track: "Automatisme &amp; Informatique Industrielle" },
+{ owner: "PIGIER Taza",     cycle: "2007-2009", degree: "Technicien",   track: "Gestion Informatique" },
+            ],
             skill: [
                 { title: "Programming", group: [
 { title: 'Python 2.7', metrise: '100%' },
@@ -69,4 +74,3 @@ Site.skillbar = {
 
 App.hook('init', Site.skillbar.init);
 App.hook('load', Site.skillbar.load);
-

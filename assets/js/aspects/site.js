@@ -13,8 +13,8 @@ var Site = {
                     link: 'amine.tayaa.me',
                 },
                 bio: [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis.",
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. ",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis.",
                 ],
             };
         },
@@ -48,4 +48,3 @@ var Site = {
 
 App.hook('init', Site.profile.init);
 App.hook('load', Site.profile.load);
-

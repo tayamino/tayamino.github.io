@@ -1,8 +1,12 @@
 Site.portfolio = {
+    post: {
+
+    },
+    taxo: {
+
+    },
     init: function() {
         App.vues.push('portfolio');
-
-        var listing;
 
         App.data.portfolio = {
             category: [
@@ -15,50 +19,51 @@ Site.portfolio = {
             ],
         };
 
-        listing = [{
+        var listing = {
+            agency: [{
 /*
-            cycle: "2012", alias: 'connectik',  title: "Connectik Services"
-        },{
+                cycle: "2012", alias: 'connectik',  title: "Connectik Services"
+            },{
+                cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
+            },{
+                cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
+            },{
+                cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
+            },{
+                cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
 //*/
-            cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
-        },{
-            cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
-        },{
-            cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
-        },{
-            cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
-        }];
+                cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
+            },{
+                cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
+            }],
+            espace: [{
+                cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
+            },{
+                cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
+/*
+            },{
+                cycle: "2016", alias: 'park-adventure',  title: "Park Adventure"
+//*/
+            }],
+            person: [{
 
-        for (var i=0 ; i<listing.length ; i++) {
-            App.data.portfolio.projects.push({
-                label: 'agency',
-                title: listing[i].title,
-                cover: '/images/logos/'+listing[i].alias+'.png',
-                links: {
-    web: "http://"+listing[i].alias+".portfolio.tayaa.me"
-                },
-                cycle: listing[i].cycle,
-            });
-        }
+            }],
+        };
 
-        listing = [{
-            cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
-        },{
-            cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
-        },{
-            cycle: "2016", alias: 'park-adventure',  title: "Park Adventure"
-        }];
+        for (var j=0 ; j<App.data.portfolio.length ; j++) {
+            var categ = App.data.portfolio[j].name;
 
-        for (var i=0 ; i<listing.length ; i++) {
-            App.data.portfolio.projects.push({
-                label: 'espace',
-                title: listing[i].title,
-                cover: '/images/logos/'+listing[i].alias+'.png',
-                links: {
-    web: "http://"+listing[i].alias+".portfolio.tayaa.me"
-                },
-                cycle: listing[i].cycle,
-            });
+            for (var i=0 ; i<listing[categ].length ; i++) {
+                App.data.portfolio.projects.push({
+                    label: 'agency',
+                    title: listing[categ][i].title,
+                    cover: '/images/logos/'+listing[categ][i].alias+'.png',
+                    links: {
+        web: "http://"+listing[categ][i].alias+".portfolio.tayaa.me"
+                    },
+                    cycle: listing[categ][i].cycle,
+                });
+            }
         }
     },
     load: function($) {
@@ -91,4 +96,3 @@ Site.portfolio = {
 
 App.hook('init', Site.portfolio.init);
 App.hook('load', Site.portfolio.load);
-
