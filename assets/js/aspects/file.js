@@ -4,12 +4,12 @@ Site.skillbar = {
 
         App.data.resume = {
             experience: [
-{ owner: "Dev Freelancer",     cycle: "2008 - 2010", roles: ['IT Developer'], feels: "", detail: [
+{ owner: "Dev Freelancer",     cycle: "2008 - 2010", roles: ['IT Developer'], detail: [
   "Various experiences working as a consultant with startups (Skills : Linux, Shell, Python, NoSQL, ETL, ...)",
   "Valuable experience working on End-to-End Web projects",
   "Freelancing (small jobs). Including: PHP, MySQL, Windows and Linux servers.",
 ] },
-{ owner: "Vaya Studio",        cycle: "2010", roles: ['Web Developer'], feels: "", detail: [
+{ owner: "Vaya Studio",        cycle: "2010", roles: ['Web Developer'], detail: [
   "Integrating WP-theme using HTML5 / CSS3 / jQuery",
   "Developping WordPress plugins to extend core functionnalities (URL-Rewrites, custom Post Types, Semantic SEO, Custom templates per taxonomy ...)",
   "Optimizing the website using Nginx, Memcache.",
@@ -17,16 +17,16 @@ Site.skillbar = {
   "Maintaining the local network using a (Zentyal server / NAS / Printing).",
   "Deployment & Supervision of cloud-based instances (web server / cloud desktops / backoffice instances)",
 ] },
-{ owner: "Web Freelancer",     cycle: "2011", roles: ['Web Developer'], feels: "Mostly jobs in WordPress, Prestashop and related web technologies. ", detail: [
-
+{ owner: "Web Freelancer",     cycle: "2011", roles: ['Web Developer'], detail: [
+  "Mostly jobs in WordPress, Prestashop and related web technologies.",
 ] },
-{ owner: "Connectik Services", cycle: "2011 - 2012", roles: ['Founder','CTO'], feels: "", detail: [
+{ owner: "Connectik Services", cycle: "2011 - 2012", roles: ['Founder','CTO'], detail: [
   "ASP.NET / C# / VB.NET",
   "Python (mainly Django and related)",
   "PHP 5 / jQuery / WordPress",
   "Working on business solutions (mainly OpenERP, OpenKM) : deployment / plugin developpement",
 ] },
-{ owner: "SawtBladi Platform", cycle: "2013", roles: ['Developer','SysAdmin'], feels: "", detail: [
+{ owner: "SawtBladi Platform", cycle: "2013", roles: ['Developer','SysAdmin'], detail: [
   "Integrating WP-theme using HTML5 / CSS3 / jQuery",
   "Developping WordPress plugins to extend core functionnalities (URL-Rewrites, custom Post Types, Semantic SEO, Custom templates per taxonomy ...)",
   "Optimizing the website using Nginx, Memcache.",
@@ -34,7 +34,7 @@ Site.skillbar = {
   "Developping custom crawlers for the news team of the website (5 journalists dispatching the data through XMPP/Web-UI).",
   "Deployment & Supervision of cloud-based instances (web server / cloud desktops / backoffice instances)",
 ] },
-{ owner: "Enochian Designs",   cycle: "2014 - 2015", roles: ['Co-Founder','CTO'], feels: "", detail: [
+{ owner: "Enochian Designs",   cycle: "2014 - 2015", roles: ['Co-Founder','CTO'], detail: [
   "Web-based Business Applications (Django + Analytics + Reporting)",
   "Custom Dashboards (TWBT + Flask/Django/Slim-PHP)",
   "Adopting the '12-factor app' principles, resulting in a full xAAS deployments (OpenShift / Heroku / EC2+Ansible)",
@@ -42,11 +42,11 @@ Site.skillbar = {
   "BASH / PHP 7 / Python 2.7 / Node.JS",
   "HTML5 / CSS3 / D3",
 ] },
-{ owner: "Varaa Solutions",    cycle: "2016 - 2017", roles: ['Developer','Maker'], feels: "", detail: [
+{ owner: "Varaa Solutions",    cycle: "2016 - 2017", roles: ['Developer','Maker'], detail: [
 
 ] },
-{ owner: "IoT Freelancer",     cycle: "2017 - 2018", roles: ['Developer','Maker'], feels: "Democratization of IoT technologies and products was a golden opportunity to practice what I've been preaching my self to do.", detail: [
-
+{ owner: "IoT Freelancer",     cycle: "2017 - 2018", roles: ['Developer','Maker'], detail: [
+"Democratization of IoT technologies and products was a golden opportunity to practice what I've been preaching my self to do.",
 ] },
             ],
             education: [

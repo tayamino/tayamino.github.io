@@ -46,7 +46,15 @@ Site.portfolio = {
 //*/
             }],
             person: [{
-
+/*
+                cycle: "2014", alias: 'tayaa-med-amine',  title: "TAYAA Med Amine"
+            },{
+                cycle: "2014", alias: 'gali-mahmoud',     title: "GALI Mahmoud"
+            },{
+                cycle: "2015", alias: 'lachhab-karim',    title: "LACHHAB Karim"
+            },{
+                cycle: "2015", alias: 'tayaa-med-sghir',  title: "TAYAA Med Sghir"
+//*/
             }],
         };
 
