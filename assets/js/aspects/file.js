@@ -37,7 +37,7 @@ Site.skillbar = {
 { owner: "Enochian Designs",   cycle: "2014-2015", roles: ['Co-Founder','CTO'], feels: "", detail: [
   "Web-based Business Applications (Django + Analytics + Reporting)",
   "Custom Dashboards (TWBT + Flask/Django/Slim-PHP)",
-  "Adopting the "12-factor app" principles, resulting in a full xAAS deployments (OpenShift / Heroku / EC2+Ansible)",
+  "Adopting the '12-factor app' principles, resulting in a full xAAS deployments (OpenShift / Heroku / EC2+Ansible)",
   "Embracing an efficient approach through providing all clients with a Responsive Design and Semantic SEO (enhancing the So-Lo-Mo aspects of the Web).",
   "BASH / PHP 7 / Python 2.7 / Node.JS",
   "HTML5 / CSS3 / D3",
