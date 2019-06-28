@@ -6,10 +6,20 @@ Site.portfolio = {
 
     },
     init: function() {
-        App.vues.push('portfolio');
+      App.vues.push('services');
 
-        App.data.portfolio = {
-            category: [
+      App.data.services = {
+        arts: [
+          { icon: 'fa fa-cog',     name: "ITC Contractor" },
+          { icon: 'fa fa-linux',   name: "FOSS Consultant" },
+          { icon: 'fa fa-compass', name: "Tech Enthusiast" },
+        ],
+      };
+
+      App.vues.push('portfolio');
+
+      App.data.portfolio = {
+          category: [
 { name: 'agency',  text: 'Digital Agency' },
 { name: 'espace', text: 'Web Sites' },
 { name: 'person', text: 'Personal Sites' },
