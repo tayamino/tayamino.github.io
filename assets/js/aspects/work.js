@@ -11,10 +11,11 @@ Site.portfolio = {
       App.data.services = {
         arts: [
           { icon: 'fa fa-cog',     name: "ITC Contractor" },
-          { icon: 'fa fa-linux',   name: "FOSS Consultant" },
+          { icon: 'fa fa-linux',   name: "FOSS Guru" },
           { icon: 'fa fa-compass', name: "Tech Enthusiast" },
           { icon: 'fa fa-circuit', name: "IoT Maker" },
           { icon: 'fa fa-heart',   name: "DevOps Advocate" },
+          { icon: 'fa fa-lawyer',  name: "Business Consultant" },
         ],
       };
 
