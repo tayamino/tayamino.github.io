@@ -19,7 +19,7 @@
                         <span class="fa fa-briefcase"></span>
                         <span v-html="entry.owner"></span>
                     </h6>
-                    <p v-html="entry.detail"></p>
+                    <p v-for="literal in entry.detail" v-html="literal"></p>
                 </li>
             </ul>
             <br>

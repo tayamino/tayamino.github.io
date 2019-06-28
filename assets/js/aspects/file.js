@@ -61,17 +61,17 @@ Site.skillbar = {
 { title: 'Python 3+', metrise: '50%' },
 { title: 'Node.JS', metrise: '35%' },
                 ] },
-                { title: "Frameworks", group: [
-{ title: 'Django', metrise: '100%' },
-{ title: 'Wordpress', metrise: '95%' },
-{ title: '', metrise: '65%' },
-{ title: 'Laravel', metrise: '35%' },
-                ] },
                 { title: "Web skills", group: [
 { title: 'HTML 5', metrise: '100%' },
 { title: 'CSS 3', metrise: '95%' },
 { title: 'Javascript', metrise: '65%' },
 { title: 'Vue.js', metrise: '35%' },
+                ] },
+                { title: "Frameworks", group: [
+{ title: 'Django', metrise: '100%' },
+{ title: 'Wordpress', metrise: '95%' },
+{ title: '', metrise: '65%' },
+{ title: 'Laravel', metrise: '35%' },
                 ] },
                 { title: "Operating Systems", group: [
 { title: 'Ubuntu',  metrise: '100%' },
