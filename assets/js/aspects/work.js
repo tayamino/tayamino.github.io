@@ -13,6 +13,8 @@ Site.portfolio = {
           { icon: 'fa fa-cog',     name: "ITC Contractor" },
           { icon: 'fa fa-linux',   name: "FOSS Consultant" },
           { icon: 'fa fa-compass', name: "Tech Enthusiast" },
+          { icon: 'fa fa-circuit', name: "IoT Maker" },
+          { icon: 'fa fa-heart',   name: "DevOps Advocate" },
         ],
       };
 
