@@ -45,9 +45,13 @@ Site.portfolio = {
             },{
                 cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
 //*/
+                cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
+            },{
                 cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
             },{
                 cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
+            },{
+                cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
             }],
             espace: [{
                 cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
@@ -80,7 +84,7 @@ Site.portfolio = {
                     title: listing[categ][i].title,
                     cover: '/images/logos/'+listing[categ][i].alias+'.png',
                     links: {
-        web: "http://"+listing[categ][i].alias+".portfolio.tayaa.me"
+        web: "http://"+listing[categ][i].alias+".uchikoma.website"
                     },
                     cycle: listing[categ][i].cycle,
                 });
