@@ -10,7 +10,7 @@ var Site = {
                     city: "Taza, Morocco",
                     mail: 'amine@tayaa.me',
                     call: "+212 (6) 44 76 46 08",
-                    link: 'amine.tayaa.me',
+                    link: '#', // 'amine.tayaa.me',
                 },
                 bio: [
                     "Passionate Self-Learner looking to promote the adoption &amp; usage of Technology in the everyday life of everyone.",
