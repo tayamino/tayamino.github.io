@@ -32,11 +32,11 @@ Site.portfolio = {
             ],
         };
 
-        var listing = {
-            platforms: 'xxxxxxxxxxxx',
-            operating: 'xxxxxxxxxxxx',
-            languages: 'xxxxxxxxxxxx',
-            framework: 'xxxxxxxxxxxx',
+        var mapping = {
+            operating: 'system',
+            languages: 'runtime',
+            platforms: 'platform',
+            framework: 'framework',
         };
 
         var listing = {
