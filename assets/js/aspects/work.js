@@ -23,55 +23,53 @@ Site.portfolio = {
 
       App.data.portfolio = {
           category: [
-{ name: 'agency',  text: 'Digital Agency' },
-{ name: 'espace', text: 'Web Sites' },
-{ name: 'person', text: 'Personal Sites' },
+{ name: 'platforms', text: 'Platforms' },
+{ name: 'languages', text: 'Languages' },
+{ name: 'framework', text: 'Framework' },
             ],
             projects: [
-//{ label: 'person',    title: "Karim LACH'HAB", cover: '/images/logos/lachhab.png', cycle: "2010", links: { web: "" } },
             ],
         };
 
         var listing = {
-            agency: [{
-/*
-                cycle: "2012", alias: 'connectik',  title: "Connectik Services"
+            platforms: [{
+                cycle: "2014", alias: 'system2use', title: "System 2 Use"
             },{
-                cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
+                cycle: "2015", alias: 'runtime2use', title: "Runtime 2 Use"
             },{
-                cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
+                cycle: "2016", alias: 'backend2use', title: "Backend 2 Use"
             },{
-                cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
-            },{
-                cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
-//*/
-                cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
-            },{
-                cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
-            },{
-                cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
-            },{
-                cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
+                cycle: "2017", alias: 'cloud2use', title: "Cloud 2 Use"
             }],
-            espace: [{
-                cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
+            languages: [{
+                cycle: "2014", alias: 'python2use', title: "Python 2 Use"
             },{
-                cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
-/*
+                cycle: "2015", alias: 'nodejs2use', title: "Node.js 2 Use"
             },{
-                cycle: "2016", alias: 'park-adventure',  title: "Park Adventure"
-//*/
+                cycle: "2016", alias: 'php2use', title: "PHP 2 Use"
+            },{
+                cycle: "2017", alias: 'shell2use', title: "Shell 2 Use"
             }],
-            person: [{
-/*
-                cycle: "2014", alias: 'tayaa-med-amine',  title: "TAYAA Med Amine"
+            framework: [{
+                cycle: "2014", alias: 'flask2use',  title: "Flask 2 Use"
             },{
-                cycle: "2014", alias: 'gali-mahmoud',     title: "GALI Mahmoud"
+                cycle: "2015", alias: 'django2use',  title: "Django 2 Use"
             },{
-                cycle: "2015", alias: 'lachhab-karim',    title: "LACHHAB Karim"
+                cycle: "2016", alias: 'crossbar2use',  title: "CrossBar 2 Use"
             },{
-                cycle: "2015", alias: 'tayaa-med-sghir',  title: "TAYAA Med Sghir"
-//*/
+                cycle: "2017", alias: 'airflow2use',  title: "AirFlow 2 Use"
+            },{
+                cycle: "2014", alias: 'express2use',  title: "Express 2 Use"
+            },{
+                cycle: "2015", alias: 'parse2use',  title: "Parse 2 Use"
+            },{
+                cycle: "2016", alias: 'hubot2use',  title: "Hubot 2 Use"
+            },{
+                cycle: "2014", alias: 'flight2use',  title: "Flight 2 Use"
+            },{
+                cycle: "2015", alias: 'laravel2use',  title: "Laravel 2 Use"
+            },{
+                cycle: "2016", alias: 'wordpress2use',  title: "WordPress 2 Use"
             }],
         };
 
@@ -79,12 +77,16 @@ Site.portfolio = {
             var categ = App.data.portfolio.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
+                if (!(listing[categ][i].image)) {
+                    listing[categ][i].image = '/images/cover/'+listing[categ][i].alias+'.png';
+                }
+
                 App.data.portfolio.projects.push({
-                    label: 'agency',
+                    label: categ,
                     title: listing[categ][i].title,
                     cover: '/images/logos/'+listing[categ][i].alias+'.png',
                     links: {
-        web: "http://"+listing[categ][i].alias+".uchikoma.website"
+        web: "http://bitbucket.org/"+listing[categ][i].alias+"/"
                     },
                     cycle: listing[categ][i].cycle,
                 });
