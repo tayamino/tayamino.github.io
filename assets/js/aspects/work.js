@@ -54,10 +54,12 @@ Site.portfolio = {
                 cycle: "2016", alias: 'vagrant2use', title: "Vagrant 2 Use"
             },{
                 cycle: "2017", alias: 'docker2use', title: "Docker 2 Use"
+            /*
             },{
                 cycle: "2018", alias: 'libvirt2use', title: "LibVirt 2 Use"
             },{
                 cycle: "2019", alias: 'cloud2use', title: "LibCloud 2 Use"
+            //*/
             },{
                 cycle: "2020", alias: 'kubernetes2use', title: "Kubernetes 2 Use"
             }],
