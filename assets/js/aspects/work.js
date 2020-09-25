@@ -33,6 +33,13 @@ Site.portfolio = {
         };
 
         var listing = {
+            platforms: 'xxxxxxxxxxxx',
+            operating: 'xxxxxxxxxxxx',
+            languages: 'xxxxxxxxxxxx',
+            framework: 'xxxxxxxxxxxx',
+        };
+
+        var listing = {
             /*
             modelings: [{
                 cycle: "2014", alias: 'system2use', title: "System 2 Use"
@@ -118,6 +125,8 @@ Site.portfolio = {
             var categ = App.data.portfolio.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
+                listing[categ][i].rlink = mapping[categ];
+
                 if (!(listing[categ][i].image)) {
                     listing[categ][i].image = '/images/cover/'+listing[categ][i].alias+'.png';
                 }
@@ -127,7 +136,7 @@ Site.portfolio = {
                     title: listing[categ][i].title,
                     cover: listing[categ][i].image,
                     links: {
-        web: "http://bitbucket.org/"+listing[categ][i].alias+"/"
+        web: "http://bitbucket.org/"+listing[categ][i].alias+"/"+listing[categ][i].rlink+".git",
                     },
                     cycle: listing[categ][i].cycle,
                 });
