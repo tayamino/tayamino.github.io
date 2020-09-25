@@ -23,8 +23,9 @@ Site.portfolio = {
 
       App.data.portfolio = {
           category: [
-{ name: 'platforms', text: 'Platforms' },
-{ name: 'languages', text: 'Languages' },
+{ name: 'platforms', text: 'Platform' },
+{ name: 'operating', text: 'Operating System' },
+{ name: 'languages', text: 'Programming Language' },
 { name: 'framework', text: 'Framework' },
             ],
             projects: [
@@ -32,7 +33,8 @@ Site.portfolio = {
         };
 
         var listing = {
-            platforms: [{
+            /*
+            modelings: [{
                 cycle: "2014", alias: 'system2use', title: "System 2 Use"
             },{
                 cycle: "2015", alias: 'runtime2use', title: "Runtime 2 Use"
@@ -40,6 +42,43 @@ Site.portfolio = {
                 cycle: "2016", alias: 'backend2use', title: "Backend 2 Use"
             },{
                 cycle: "2017", alias: 'cloud2use', title: "Cloud 2 Use"
+            }],
+            //*/
+            platforms: [{
+                cycle: "2013", alias: 'openshift2use', title: "OpenShift 2 Use"
+            },{
+                cycle: "2014", alias: 'heroku2use', title: "Heroku 2 Use"
+            },{
+                cycle: "2015", alias: 'floydhub2use', title: "Floyd-Hub 2 Use"
+            },{
+                cycle: "2016", alias: 'vagrant2use', title: "Vagrant 2 Use"
+            },{
+                cycle: "2017", alias: 'docker2use', title: "Docker 2 Use"
+            },{
+                cycle: "2018", alias: 'libvirt2use', title: "LibVirt 2 Use"
+            },{
+                cycle: "2019", alias: 'cloud2use', title: "LibCloud 2 Use"
+            },{
+                cycle: "2020", alias: 'kubernetes2use', title: "Kubernetes 2 Use"
+            }],
+            operating: [{
+                cycle: "2011", alias: 'ubuntu2use', title: "Ubuntu 10 Use"
+            },{
+                cycle: "2012", alias: 'debian2use', title: "Debian 2 Use"
+            },{
+                cycle: "2013", alias: 'zentyal2use', title: "Zentyal 2 Use"
+            },{
+                cycle: "2014", alias: 'macos2use', title: "MacOS 2 Use"
+            },{
+                cycle: "2015", alias: 'windows2use', title: "Windows 2 Use"
+            },{
+                cycle: "2016", alias: 'openwrt2use', title: "OpenWRT 10 Use"
+            },{
+                cycle: "2017", alias: 'raspbian2use', title: "RaspBian 2 Use"
+            },{
+                cycle: "2018", alias: 'android2use', title: "Android 2 Use"
+            },{
+                cycle: "2019", alias: 'chromeos2use', title: "Chrome OS 2 Use"
             }],
             languages: [{
                 cycle: "2014", alias: 'python2use', title: "Python 2 Use"
