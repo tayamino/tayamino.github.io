@@ -631,6 +631,7 @@ h2.resp-accordion:hover {
     -o-box-sizing: border-box;
     width:31%;
     margin:1%;
+    height:200px;
     display:none;
     float:left;
     overflow:hidden;
