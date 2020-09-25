@@ -84,7 +84,7 @@ Site.portfolio = {
                 App.data.portfolio.projects.push({
                     label: categ,
                     title: listing[categ][i].title,
-                    cover: '/images/logos/'+listing[categ][i].alias+'.png',
+                    cover: listing[categ][i].image,
                     links: {
         web: "http://bitbucket.org/"+listing[categ][i].alias+"/"
                     },
