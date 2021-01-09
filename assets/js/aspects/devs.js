@@ -116,8 +116,8 @@ Site.develop = {
                     listing[categ][i].image = '/images/cover/'+listing[categ][i].alias+'.png';
                 }
 
-                if (!(listing[categ][i].links['web'])) {
-                    listing[categ][i].links['web'] = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
+                if (!(listing[categ][i].rlink)) {
+                    listing[categ][i].rlink = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
                 }
 
                 App.data.develop.projects.push({
