@@ -21,17 +21,8 @@ Site.working = {
 
         var listing = {
             agency: [{
-/*
                 cycle: "2012", alias: 'connectik',  title: "Connectik Services"
             },{
-                cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
-            },{
-                cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
-            },{
-                cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
-            },{
-                cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
-//*/
                 cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
             },{
                 cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
@@ -46,18 +37,18 @@ Site.working = {
                 cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
 /*
             },{
-                cycle: "2016", alias: 'park-adventure',  title: "Park Adventure"
+                cycle: "2016", alias: 'elbechari',  title: "Espace El Bechari"
 //*/
             }],
             person: [{
-/*
                 cycle: "2014", alias: 'tayaa-med-amine',  title: "TAYAA Med Amine"
             },{
-                cycle: "2014", alias: 'gali-mahmoud',     title: "GALI Mahmoud"
+                cycle: "2015", alias: 'tayaa-med-sghir',  title: "TAYAA Med Sghir"
             },{
                 cycle: "2015", alias: 'lachhab-karim',    title: "LACHHAB Karim"
+/*
             },{
-                cycle: "2015", alias: 'tayaa-med-sghir',  title: "TAYAA Med Sghir"
+                cycle: "2014", alias: 'gali-mahmoud',     title: "GALI Mahmoud"
 //*/
             }],
         };
@@ -73,7 +64,7 @@ Site.working = {
                 App.data.working.projects.push({
                     label: 'agency',
                     title: listing[categ][i].title,
-                    cover: '/images/logos/'+listing[categ][i].alias+'.png',
+                    cover: '/images/working/'+listing[categ][i].alias+'.png',
                     links: {
                         web: listing[categ][i].rlink,
                     },

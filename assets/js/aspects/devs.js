@@ -39,28 +39,31 @@ Site.develop = {
             }],
             //*/
             platforms: [{
+/*
                 cycle: "2013", alias: 'openshift2use', title: "OpenShift 2 Use"
             },{
-                cycle: "2014", alias: 'heroku2use', title: "Heroku 2 Use"
-            },{
                 cycle: "2015", alias: 'floydhub2use', title: "Floyd-Hub 2 Use"
+//*/
+            },{
+                cycle: "2014", alias: 'heroku2use', title: "Heroku 2 Use"
             },{
                 cycle: "2016", alias: 'vagrant2use', title: "Vagrant 2 Use"
             },{
                 cycle: "2017", alias: 'docker2use', title: "Docker 2 Use"
-            /*
+/*
             },{
                 cycle: "2018", alias: 'libvirt2use', title: "LibVirt 2 Use"
             },{
                 cycle: "2019", alias: 'cloud2use', title: "LibCloud 2 Use"
-            //*/
             },{
                 cycle: "2020", alias: 'kubernetes2use', title: "Kubernetes 2 Use"
+//*/
             }],
             operating: [{
                 cycle: "2011", alias: 'ubuntu2use', title: "Ubuntu 10 Use"
             },{
                 cycle: "2012", alias: 'debian2use', title: "Debian 2 Use"
+/*
             },{
                 cycle: "2013", alias: 'zentyal2use', title: "Zentyal 2 Use"
             },{
@@ -69,6 +72,7 @@ Site.develop = {
                 cycle: "2015", alias: 'windows2use', title: "Windows 2 Use"
             },{
                 cycle: "2016", alias: 'openwrt2use', title: "OpenWRT 10 Use"
+//*/
             },{
                 cycle: "2017", alias: 'raspbian2use', title: "RaspBian 2 Use"
             },{
@@ -90,11 +94,12 @@ Site.develop = {
             },{
                 cycle: "2015", alias: 'django2use',  title: "Django 2 Use"
             },{
+                cycle: "2014", alias: 'express2use',  title: "Express 2 Use"
+/*
+            },{
                 cycle: "2016", alias: 'crossbar2use',  title: "CrossBar 2 Use"
             },{
                 cycle: "2017", alias: 'airflow2use',  title: "AirFlow 2 Use"
-            },{
-                cycle: "2014", alias: 'express2use',  title: "Express 2 Use"
             },{
                 cycle: "2015", alias: 'parse2use',  title: "Parse 2 Use"
             },{
@@ -103,6 +108,7 @@ Site.develop = {
                 cycle: "2014", alias: 'flight2use',  title: "Flight 2 Use"
             },{
                 cycle: "2015", alias: 'laravel2use',  title: "Laravel 2 Use"
+//*/
             },{
                 cycle: "2016", alias: 'wordpress2use',  title: "WordPress 2 Use"
             }],
