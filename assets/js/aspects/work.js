@@ -79,15 +79,21 @@ Site.portfolio = {
             var categ = App.data.portfolio.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
-                App.data.portfolio.projects.push({
+                var entry = {
                     label: 'agency',
                     title: listing[categ][i].title,
                     cover: '/images/logos/'+listing[categ][i].alias+'.png',
                     links: {
-        web: "http://"+listing[categ][i].alias+".uchikoma.website"
+                        web: listing[categ][i].rlink,
                     },
                     cycle: listing[categ][i].cycle,
-                });
+                };
+                
+                if (listing[categ][i].rlink!=null) {
+                    entry.links['web'] = "http://"+listing[categ][i].alias+".tayaa.xyz";
+                }
+                
+                App.data.portfolio.projects.push(entry);
             }
         }
     },

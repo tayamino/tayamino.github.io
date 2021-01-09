@@ -112,21 +112,25 @@ Site.develop = {
             var categ = App.data.develop.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
-                listing[categ][i].rlink = mapping[categ];
-
                 if (!(listing[categ][i].image)) {
                     listing[categ][i].image = '/images/cover/'+listing[categ][i].alias+'.png';
                 }
 
-                App.data.develop.projects.push({
+                var entry = {
                     label: categ,
                     title: listing[categ][i].title,
                     cover: listing[categ][i].image,
                     links: {
-        web: "http://bitbucket.org/"+listing[categ][i].alias+"/"+listing[categ][i].rlink+".git",
+                        web: listing[categ][i].rlink,
                     },
                     cycle: listing[categ][i].cycle,
-                });
+                };
+                
+                if (entry.links['web']!=null) {
+                    entry.links['web'] = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
+                }
+
+                App.data.develop.projects.push(entry);
             }
         }
     },
