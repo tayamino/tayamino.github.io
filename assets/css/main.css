@@ -2870,3 +2870,11 @@ li h6{
 div.ppt {
     display: none !important;
 }
+
+/*********************************************************************/
+
+a[rel="portfolio"] img {
+    width: 140px;
+    height: 140px;
+}
+
