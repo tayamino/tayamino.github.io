@@ -6,19 +6,6 @@ Site.working = {
 
     },
     init: function() {
-      App.vues.push('services');
-
-      App.data.services = {
-        arts: [
-          { icon: 'fa fa-signal',   name: "IoT Maker" },
-          { icon: 'fa fa-heart',    name: "DevOps Advocate" },
-          { icon: 'fa fa-compass',  name: "Tech Enthusiast" },
-          { icon: 'fa fa-suitcase', name: "Business Consultant" },
-          { icon: 'fa fa-linux',    name: "FOSS Guru" },
-          { icon: 'fa fa-cog',      name: "ITC Contractor" },
-        ],
-      };
-
       App.vues.push('working');
 
       App.data.working = {
@@ -127,3 +114,4 @@ Site.working = {
 
 App.hook('init', Site.working.init);
 App.hook('load', Site.working.load);
+
