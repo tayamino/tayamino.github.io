@@ -1,4 +1,4 @@
-Site.portfolio = {
+Site.working = {
     post: {
 
     },
@@ -19,9 +19,9 @@ Site.portfolio = {
         ],
       };
 
-      App.vues.push('portfolio');
+      App.vues.push('working');
 
-      App.data.portfolio = {
+      App.data.working = {
           category: [
 { name: 'agency',  text: 'Digital Agency' },
 { name: 'espace', text: 'Web Sites' },
@@ -75,8 +75,8 @@ Site.portfolio = {
             }],
         };
 
-        for (var j=0 ; j<App.data.portfolio.category.length ; j++) {
-            var categ = App.data.portfolio.category[j].name;
+        for (var j=0 ; j<App.data.working.category.length ; j++) {
+            var categ = App.data.working.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
                 var entry = {
@@ -93,25 +93,25 @@ Site.portfolio = {
                     entry.links['web'] = "http://"+listing[categ][i].alias+".tayaa.xyz";
                 }
                 
-                App.data.portfolio.projects.push(entry);
+                App.data.working.projects.push(entry);
             }
         }
     },
     load: function($) {
         // MixItUp plugin
         // http://mixitup.io
-        $('#portfoliolist').mixitup({
-            targetSelector: '.portfolio',
+        $('#workinglist').mixitup({
+            targetSelector: '.working',
             filterSelector: '.filter',
             effects: ['fade'],
             easing: 'snap',
             // call the hover effect
-            onMixEnd: Site.portfolio.mixs()
+            onMixEnd: Site.working.mixs()
         });
     },
     mixs: function() {
         // Simple parallax effect
-        $('#portfoliolist .portfolio').hover(
+        $('#workinglist .working').hover(
                 function() {
                     $(this).find('.label').stop().animate({bottom: 0}, 200);
                     $(this).find('img').stop().animate({top: -30}, 500);
@@ -125,5 +125,5 @@ Site.portfolio = {
     }
 };
 
-App.hook('init', Site.portfolio.init);
-App.hook('load', Site.portfolio.load);
+App.hook('init', Site.working.init);
+App.hook('load', Site.working.load);
