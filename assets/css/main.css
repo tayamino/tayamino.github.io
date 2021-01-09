@@ -2873,8 +2873,17 @@ div.ppt {
 
 /*********************************************************************/
 
+.portfolio {
+    margin: 10px;
+}
+
+.portfolio-wrapper {
+    background: transparent;
+}
+
 a[rel="portfolio"] img {
-    width: 140px;
+    min-width: 140px;
     height: 140px;
+    max-width: 240px;
 }
 
