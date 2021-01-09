@@ -6,10 +6,10 @@ Site.develop = {
 
     },
     init: function() {
-      App.vues.push('develop');
+        App.vues.push('develop');
 
-      App.data.develop = {
-          category: [
+        App.data.develop = {
+            category: [
 { name: 'platforms', text: 'Platform' },
 { name: 'operating', text: 'Operating System' },
 { name: 'languages', text: 'Programming Language' },
@@ -108,7 +108,7 @@ Site.develop = {
             }],
         };
 
-        for (var j=0 ; App.data.develop.category.length ; j++) {
+        for (var j=0 ; j<App.data.develop.category.length ; j++) {
             var categ = App.data.develop.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
