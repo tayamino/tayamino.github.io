@@ -66,7 +66,11 @@ Site.working = {
             var categ = App.data.working.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
-                var entry = {
+                if (listing[categ][i].rlink!=null) {
+                    listing[categ][i].rlink = "http://"+listing[categ][i].alias+".tayaa.xyz";
+                }
+                
+                App.data.working.projects.push({
                     label: 'agency',
                     title: listing[categ][i].title,
                     cover: '/images/logos/'+listing[categ][i].alias+'.png',
@@ -74,13 +78,7 @@ Site.working = {
                         web: listing[categ][i].rlink,
                     },
                     cycle: listing[categ][i].cycle,
-                };
-                
-                if (listing[categ][i].rlink!=null) {
-                    entry.links['web'] = "http://"+listing[categ][i].alias+".tayaa.xyz";
-                }
-                
-                App.data.working.projects.push(entry);
+                });
             }
         }
     },

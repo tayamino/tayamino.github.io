@@ -13,7 +13,7 @@ Site.develop = {
 { name: 'platforms', text: 'Platform' },
 { name: 'operating', text: 'Operating System' },
 { name: 'languages', text: 'Programming Language' },
-{ name: 'framework', text: 'Framework' },
+{ name: 'framework', text: 'Framework' }
             ],
             projects: [
             ],
@@ -116,7 +116,11 @@ Site.develop = {
                     listing[categ][i].image = '/images/cover/'+listing[categ][i].alias+'.png';
                 }
 
-                var entry = {
+                if (!(listing[categ][i].links['web'])) {
+                    listing[categ][i].links['web'] = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
+                }
+
+                App.data.develop.projects.push({
                     label: categ,
                     title: listing[categ][i].title,
                     cover: listing[categ][i].image,
@@ -124,13 +128,7 @@ Site.develop = {
                         web: listing[categ][i].rlink,
                     },
                     cycle: listing[categ][i].cycle,
-                };
-                
-                if (entry.links['web']!=null) {
-                    entry.links['web'] = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
-                }
-
-                App.data.develop.projects.push(entry);
+                });
             }
         }
     },
