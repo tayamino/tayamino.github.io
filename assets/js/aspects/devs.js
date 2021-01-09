@@ -138,7 +138,7 @@ Site.develop = {
         // MixItUp plugin
         // http://mixitup.io
         $('#sourcelist').mixitup({
-            targetSelector: '.source',
+            targetSelector: '.portfolio',
             filterSelector: '.filter',
             effects: ['fade'],
             easing: 'snap',
@@ -148,7 +148,7 @@ Site.develop = {
     },
     mixs: function() {
         // Simple parallax effect
-        $('#sourcelist .source').hover(
+        $('#sourcelist .portfolio').hover(
                 function() {
                     $(this).find('.label').stop().animate({bottom: 0}, 200);
                     $(this).find('img').stop().animate({top: -30}, 500);
