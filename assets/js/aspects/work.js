@@ -62,7 +62,7 @@ Site.working = {
                 }
                 
                 App.data.working.projects.push({
-                    label: 'agency',
+                    label: categ,
                     title: listing[categ][i].title,
                     cover: '/images/working/'+listing[categ][i].alias+'.png',
                     links: {

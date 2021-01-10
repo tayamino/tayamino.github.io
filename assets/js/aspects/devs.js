@@ -118,10 +118,6 @@ Site.develop = {
             var categ = App.data.develop.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
-                if (!(listing[categ][i].image)) {
-                    listing[categ][i].image = '/images/cover/'+listing[categ][i].alias+'.png';
-                }
-
                 if (!(listing[categ][i].rlink)) {
                     listing[categ][i].rlink = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
                 }
@@ -129,7 +125,7 @@ Site.develop = {
                 App.data.develop.projects.push({
                     label: categ,
                     title: listing[categ][i].title,
-                    cover: listing[categ][i].image,
+                    cover: '/images/cover/'+listing[categ][i].alias+'.png',
                     links: {
                         web: listing[categ][i].rlink,
                     },
