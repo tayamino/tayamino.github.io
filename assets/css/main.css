@@ -60,7 +60,7 @@ body {
     line-height: 25px;
     color: #333333;
     overflow-x: hidden;
-    background-image: url(../images/bg/bg5.png);
+    background-image: url(../images/bg/bg2.png);
     padding: 0;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -1006,6 +1006,10 @@ ul.about {
 .widget-profil #profile_info
 {
     padding-bottom: 15px;
+}
+
+#profile_info h1, #profile_info h4, #profile_info h6, #profile_social h6, #profile_desc p {
+    color: white !important;
 }
 
 .widget-profil #profile_social
@@ -2882,8 +2886,8 @@ div.ppt {
 }
 
 a[rel="portfolio"] img {
-    min-width: 140px;
-    height: 140px;
+    min-width: 150px;
+    height: 150px;
     max-width: 240px;
 }
 
