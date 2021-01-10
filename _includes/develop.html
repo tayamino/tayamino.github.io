@@ -1,11 +1,11 @@
 <div id="develop" class="content_2">
     <h1 class="h-bloc">Open-Source [ My Code ]</h1>
-    <div class="container-source">
+    <div class="container-develop">
         <ul id="filters" class="clearfix">
             <li><span class="filter active" data-filter="pltaform ">All</span></li>
             <li v-for="entry in category"><span class="filter" v-bind:data-filter="entry.name" v-html="entry.text"></span></li>
         </ul>
-        <div id="sourcelist">
+        <div id="developlist">
             <div v-for="project in projects" v-bind:class="'portfolio '+project.label" v-bind:data-cat="project.label">
                 <div class="portfolio-wrapper">		
                     <a v-bind:href="project.links.web" rel="portfolio" v-bind:title="project.title" target="_new">

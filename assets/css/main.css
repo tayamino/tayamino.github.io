@@ -588,7 +588,7 @@ h2.resp-accordion:hover {
 ----------------------- Portfolio ------------------
 ---------------------------------------------------*/
 
-.container-portfolio { 
+.container-develop .container-working { 
     position: relative; 
     width: 100%; 
     margin: 0 auto; 
@@ -625,7 +625,7 @@ h2.resp-accordion:hover {
     color:#fff;
 }
 
-#portfoliolist .portfolio {
+#developlist .portfolio, #workinglist .portfolio {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -637,7 +637,7 @@ h2.resp-accordion:hover {
     overflow:hidden;
 }
 
-.portfolio-wrapper {
+.develop-wrapper, .portfolio-wrapper, .working-wrapper {
     overflow:hidden;
     position: relative !important;
     background: #666;
