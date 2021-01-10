@@ -12,7 +12,7 @@ Site.working = {
           category: [
 { name: 'agency',  text: 'Digital Agency' },
 { name: 'espace', text: 'Web Sites' },
-{ name: 'person', text: 'Personal Sites' },
+{ name: 'person', text: 'Personal Sites' }
             ],
             projects: [
 //{ label: 'person',    title: "Karim LACH'HAB", cover: '/images/logos/lachhab.png', cycle: "2010", links: { web: "" } },
