@@ -21,8 +21,10 @@ Site.working = {
 
         var listing = {
             agency: [{
+/*
                 cycle: "2012", alias: 'connectik',  title: "Connectik Services"
             },{
+//*/
                 cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
             },{
                 cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
