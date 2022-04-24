@@ -41,10 +41,12 @@ Site.working = {
 //*/
             }],
             person: [{
+/*
                 cycle: "2014", alias: 'tayaa-med-amine',  title: "TAYAA Med Amine"
             },{
                 cycle: "2015", alias: 'tayaa-med-sghir',  title: "TAYAA Med Sghir"
             },{
+//*/
                 cycle: "2015", alias: 'lachhab-karim',    title: "LACHHAB Karim"
 /*
             },{
@@ -60,7 +62,7 @@ Site.working = {
                 if (listing[categ][i].rlink!=null) {
                     listing[categ][i].rlink = "http://"+listing[categ][i].alias+".tayaa.xyz";
                 }
-                
+
                 App.data.working.projects.push({
                     label: categ,
                     title: listing[categ][i].title,
@@ -103,4 +105,3 @@ Site.working = {
 
 App.hook('init', Site.working.init);
 App.hook('load', Site.working.load);
-
