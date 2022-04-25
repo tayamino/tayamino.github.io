@@ -37,8 +37,10 @@ Site.working = {
                 cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
             },{
                 cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
+/*
             },{
                 cycle: "2016", alias: 'elbechari',  title: "Espace El Bechari"
+//*/
             }],
             person: [{
 /*
