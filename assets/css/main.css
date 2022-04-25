@@ -632,7 +632,7 @@ h2.resp-accordion:hover {
     width:31%;
     margin:1%;
     height:210px;
-    display:none;
+    /* display:none; */
     float:left;
     overflow:hidden;
 }

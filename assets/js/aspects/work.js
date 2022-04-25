@@ -24,9 +24,9 @@ Site.working = {
 /*
                 cycle: "2012", alias: 'connectik',  title: "Connectik Services"
             },{
-//*/
                 cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
             },{
+//*/
                 cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
             },{
                 cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
@@ -37,10 +37,8 @@ Site.working = {
                 cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
             },{
                 cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
-/*
             },{
                 cycle: "2016", alias: 'elbechari',  title: "Espace El Bechari"
-//*/
             }],
             person: [{
 /*
