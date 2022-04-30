@@ -15,6 +15,14 @@ var Site = {
                 bio: [
                     "Passionate Self-Learner looking to promote the adoption &amp; usage of Technology in the everyday life of everyone.",
                 ],
+                art: [
+                  { icon: 'fa fa-signal',   name: "IoT Maker" },
+                  { icon: 'fa fa-heart',    name: "DevOps Advocate" },
+                  { icon: 'fa fa-compass',  name: "Tech Enthusiast" },
+                  { icon: 'fa fa-suitcase', name: "Business Consultant" },
+                  { icon: 'fa fa-linux',    name: "FOSS Guru" },
+                  { icon: 'fa fa-cog',      name: "ITC Contractor" },
+              ],
             };
         },
         load: function($) {

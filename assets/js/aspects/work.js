@@ -24,36 +24,40 @@ Site.working = {
 /*
                 cycle: "2012", alias: 'connectik',  title: "Connectik Services"
             },{
-                cycle: "2014", alias: 'maher-ops', title: "Maher Ops"
-            },{
 //*/
-                cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
+                cycle: "2014", alias: 'enochian',  title: "Enochian Designs"
             },{
-                cycle: "2016", alias: 'enochian',  title: "Enochian Designs"
+                cycle: "2015", alias: 'maher-ops', title: "Maher Ops"
             },{
-                cycle: "2017", alias: 'inbijas',  title: "Initiative INBIJAS"
+                cycle: "2016", alias: 'inbijas',  title: "Initiative INBIJAS"
+            },{
+                cycle: "2017", alias: 'hack2use',  title: "Hack 2 Use"
+            },{
+                cycle: "2018", alias: 'it-issal',  title: "IT-issal Labs"
             }],
             espace: [{
                 cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
             },{
                 cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
+            },{
+                cycle: "2016", alias: 'park-adventure',  title: "Park Adventure"
+            },{
+                cycle: "2018", alias: 'nasmat-taddart',  title: "Nasmat Taddart"
+            },{
+                cycle: "2019", alias: 'oum-noha',  title: "Cuisine Oum Noha"
+            },{
+                cycle: "2020", alias: 'elbechari',  title: "El Bechari Space"
 /*
             },{
-                cycle: "2016", alias: 'elbechari',  title: "Espace El Bechari"
+                cycle: "2021", alias: 'art-tendance',  title: "Art Tendance Management"
 //*/
             }],
             person: [{
 /*
-                cycle: "2014", alias: 'tayaa-med-amine',  title: "TAYAA Med Amine"
-            },{
                 cycle: "2015", alias: 'tayaa-med-sghir',  title: "TAYAA Med Sghir"
             },{
 //*/
-                cycle: "2015", alias: 'lachhab-karim',    title: "LACHHAB Karim"
-/*
-            },{
-                cycle: "2014", alias: 'gali-mahmoud',     title: "GALI Mahmoud"
-//*/
+                cycle: "2016", alias: 'lachhab-karim',    title: "Karim LACHHAB"
             }],
         };
 
@@ -62,7 +66,7 @@ Site.working = {
 
             for (var i=0 ; i<listing[categ].length ; i++) {
                 if (listing[categ][i].rlink!=null) {
-                    listing[categ][i].rlink = "http://"+listing[categ][i].alias+".tayaa.xyz";
+                    listing[categ][i].rlink = "http://"+listing[categ][i].alias+".herokuapp.com";
                 }
 
                 App.data.working.projects.push({

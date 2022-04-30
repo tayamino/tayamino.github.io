@@ -1,23 +1,34 @@
 <div id="services" class="content_2">
-    <h1 class="h-bloc">Profile - About Me</h1>
+    <h1 class="h-bloc">Open-Source [ My Code ]</h1>
     <div class="row top-p" id="services">
-	    <div class="col-md-12">
-            <div class="title_content">
-                <div class="text_content">I work as ...</div>
-                <div class="clear"></div>
-            </div>
-            <div class="col-md-4 pack-service" v-for="entry in arts">
-                <div class="service">
-                    <div class="service-icon"><i v-bind:class="entry.icon"></i></div>
-                    <div class="service-detail">
-                        <h6 v-html="entry.name"></h6>
-                        <p v-html="entry.text"></p>
-                    </div>
+        <ul id="filters" class="clearfix">
+            <li><span class="filter active" data-filter="platforms operating languages framework">All</span></li>
+            <li v-for="entry in category"><span class="filter" v-bind:data-filter="entry.name" v-html="entry.text"></span></li>
+        </ul>
+        <div id="developlist">
+            <div v-for="project in projects" v-bind:class="'portfolio '+project.label" v-bind:data-cat="project.label">
+                <div class="portfolio-wrapper">
+                    <a v-bind:href="project.links.web" rel="portfolio" v-bind:title="project.title" target="_new">
+                        <img v-bind:src="project.cover" v-bind:alt="project.title" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a class="text-title" v-html="project.title"></a>
+                                <span class="text-category" v-html="project.cycle">
+                                    <a v-for="entry in project.links" v-bind:href="entry.link">
+                                        <i class="'fa fa-'+entry.icon"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </a>
                 </div>
             </div>
-         </div>
+            <div class="clear"></div>
+        </div>
     </div>
     <div class="clear"></div>
+<!--
     <div class="border-list"></div>
     <div class="row">
         <div class="col-md-12">
@@ -78,5 +89,5 @@
         </div>
     </div>
     <div class="clear"></div>
+//-->
 </div>
-

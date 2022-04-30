@@ -167,23 +167,23 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
 #sidebar-right .search-blog i, #sidebar-left .search-blog i {
     background: #FDB000;
 }
-.icon-switcher {	
+.icon-switcher {
     color: #FDB000 !important;
 }
 .resp-tabs-list li {
     background: #FDB000;
     color: #fff;
 }
-#services .pack-service .service-icon i {
+.pack-service .service-icon i {
     border: 3px solid #FDB000;
     color: #FDB000;
     background: #fff;
 }
-#services .pack-service:hover .service-icon i {
+.pack-service:hover .service-icon i {
     background: #FDB000;
 }
 .widget-profil{
-    background: #FDB000;   
+    background: #FDB000;
 }
 .widget-profil .head-image{
     border: 10px solid #ffc031;
@@ -195,10 +195,10 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
     border: 10px solid #ffc031;
 }
 .widget-profil  h4 {
-    color:#ffe7b1; 
+    color:#ffe7b1;
 }
 .widget-profil  h6 {
-    color:#ffe7b1; 
+    color:#ffe7b1;
 }
 .widget-profil  p {
     color:#ffe7b1 !important;

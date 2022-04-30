@@ -1,5 +1,5 @@
 <div id="develop" class="content_2">
-    <h1 class="h-bloc">Open-Source [ My Code ]</h1>
+    <h1 class="h-bloc">Eco-System [ My Tech ]</h1>
     <div class="container-develop">
         <ul id="filters" class="clearfix">
             <li><span class="filter active" data-filter="platforms operating languages framework">All</span></li>
@@ -7,13 +7,17 @@
         </ul>
         <div id="developlist">
             <div v-for="project in projects" v-bind:class="'portfolio '+project.label" v-bind:data-cat="project.label">
-                <div class="portfolio-wrapper">		
+                <div class="portfolio-wrapper">
                     <a v-bind:href="project.links.web" rel="portfolio" v-bind:title="project.title" target="_new">
                         <img v-bind:src="project.cover" v-bind:alt="project.title" />
                         <div class="label">
                             <div class="label-text">
                                 <a class="text-title" v-html="project.title"></a>
-                                <span class="text-category" v-html="project.cycle"></span>
+                                <span class="text-category" v-html="project.cycle">
+                                    <a v-for="entry in project.links" v-bind:href="entry.link">
+                                        <i class="'fa fa-'+entry.icon"></i>
+                                    </a>
+                                </span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -24,4 +28,3 @@
         </div>
     </div>
 </div>
-

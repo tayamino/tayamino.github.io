@@ -7,13 +7,13 @@
         </ul>
         <div id="workinglist">
             <div v-for="project in projects" v-bind:class="'portfolio '+project.label" v-bind:data-cat="project.label">
-                <div class="portfolio-wrapper">		
+                <div class="portfolio-wrapper">
                     <a v-bind:href="project.links.web" rel="portfolio" v-bind:title="project.title" target="_new">
                         <img v-bind:src="project.cover" v-bind:alt="project.title" />
                         <div class="label">
                             <div class="label-text">
                                 <a class="text-title" v-html="project.title"></a>
-                                <span class="text-category" v-html="project.cycle"></span>
+                                <span class="text-category" v-html="project.words"></span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -24,4 +24,3 @@
         </div>
     </div>
 </div>
-
