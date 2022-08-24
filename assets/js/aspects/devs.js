@@ -106,10 +106,10 @@ Site.develop = {
         };
 
         var mapping = {
-            operating: 'system',
-            languages: 'runtime',
-            platforms: 'platform',
-            framework: 'framework',
+            operating: 'library4nodejs', // 'system',
+            languages: 'library4nodejs', // 'runtime',
+            platforms: 'library4nodejs', // 'platform',
+            framework: 'framework', // 'framework',
         };
 
         for (var j=0 ; j<App.data.develop.category.length ; j++) {
@@ -192,6 +192,8 @@ Site.develop = {
                         entry.rlink = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
                         break;
                 }
+
+                entry.rlink = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
 
                 App.data.develop.projects.push(entry);
             }
