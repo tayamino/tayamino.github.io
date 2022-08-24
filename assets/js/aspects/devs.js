@@ -121,7 +121,7 @@ Site.develop = {
                     label: categ,
                     title: listing[categ][i].title,
                     cover: '/images/cover/'+listing[categ][i].alias+'.png',
-                    links: {},
+                    links: [],
                     cycle: categ,
                 };
 
@@ -130,32 +130,47 @@ Site.develop = {
                     case "flask":
                     case "django":
                     case "airflow":
-                        entry.links["python"] = "https://pypi.org/project/"+entry.alias;
+                        entry.links.push({
+                            file: "pip",
+                            link: "https://pypi.org/project/"+entry.alias,
+                        });
                         break;
                     case "nodejs2use":
                     case "express2use":
                     case "hubot2use":
-                        entry.links["nodejs"] = "https://npmjs.com/package/"+entry.alias;
+                        entry.links.push({
+                            file: "npm",
+                            link: "https://npmjs.com/package/"+entry.alias,
+                        });
                         break;
                     case "php2use":
                     case "laravel2use":
                     case "wordpress2use":
-                        entry.links["php"] = "https://packagist.org/packages/tayamino/"+entry.alias;
+                        entry.links.push({
+                            file: "web",
+                            link: "https://packagist.org/packages/tayamino/"+entry.alias,
+                        });
                         break;
                     case "network2use":
                     case "filesystem2use":
                     case "vocabular2use":
                     case "dataset2use":
+                        entry.links.push({
+                            file: "npm",
+                            link: "https://npmjs.com/package/"+entry.alias,
+                        });
                         //entry.links["python"] = "https://pypi.org/project/"+entry.alias;
-                        entry.links["nodejs"] = "https://npmjs.com/package/"+entry.alias;
                         //entry.links["php"] = "https://packagist.org/packages/tayamino/"+entry.alias;
                         break;
                     case "autobahn2use":
                     case "graphql2use":
                     case "linguist2use":
                     case "mosquitto2use":
+                        entry.links.push({
+                            file: "npm",
+                            link: "https://npmjs.com/package/"+entry.alias,
+                        });
                         //entry.links["python"] = "https://pypi.org/project/"+entry.alias;
-                        entry.links["nodejs"] = "https://npmjs.com/package/"+entry.alias;
                         //entry.links["php"] = "https://packagist.org/packages/tayamino/"+entry.alias;
                         break;
                 }
