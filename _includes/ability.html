@@ -15,8 +15,8 @@
                                 <a class="text-title" v-html="project.title"></a>
                                 <span class="text-category" v-html="project.cycle">
                                     <a v-for="entry in project.links" v-bind:href="entry.link">
-<img src="'/images/working/techz/'+entry.file+'.png'" v-if="entry.file" />
-<i class="'fa fa-'+entry.icon" v-else></i>
+<img v-bind:src="'/images/working/techz/'+entry.file+'.png'" v-if="entry.file" />
+<i v-bind:class="'fa fa-'+entry.icon" v-else></i>
                                     </a>
                                 </span>
                             </div>
