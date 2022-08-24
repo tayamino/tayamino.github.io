@@ -12,7 +12,7 @@
                         <img v-bind:src="project.cover" v-bind:alt="project.title" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title" v-html="project.title"></a>
+                                <a class="text-title" v-bind:title="project.rlink" v-html="project.title"></a>
                                 <span class="text-category" v-html="project.words"></span>
                             </div>
                             <div class="label-bg"></div>

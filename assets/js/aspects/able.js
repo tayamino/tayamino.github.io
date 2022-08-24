@@ -1,4 +1,4 @@
-Site.services = {
+Site.ability = {
     post: {
 
     },
@@ -6,7 +6,7 @@ Site.services = {
 
     },
     init: function() {
-        App.vues.push('services');
+        App.vues.push('ability');
 
         var listing = {
             /*
@@ -94,7 +94,7 @@ Site.services = {
             }],
         };
 
-        App.data.services = {
+        App.data.ability = {
             category: [
 { name: 'platforms', text: 'Platform' },
 { name: 'operating', text: 'Operating System' },
@@ -112,8 +112,8 @@ Site.services = {
             framework: 'framework',
         };
 
-        for (var j=0 ; j<App.data.services.category.length ; j++) {
-            var categ = App.data.services.category[j].name;
+        for (var j=0 ; j<App.data.ability.category.length ; j++) {
+            var categ = App.data.ability.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
                 entry = {
@@ -121,7 +121,7 @@ Site.services = {
                     label: categ,
                     title: listing[categ][i].title,
                     cover: '/images/cover/'+listing[categ][i].alias+'.png',
-                    links: {},
+                    links: [],
                     cycle: categ,
                 };
 
@@ -130,32 +130,47 @@ Site.services = {
                     case "flask":
                     case "django":
                     case "airflow":
-                        entry.links["python"] = "https://pypi.org/project/"+entry.alias;
+                        entry.links.push({
+                            file: "pip",
+                            link: "https://pypi.org/project/"+entry.alias,
+                        });
                         break;
                     case "nodejs2use":
                     case "express2use":
                     case "hubot2use":
-                        entry.links["nodejs"] = "https://npmjs.com/package/"+entry.alias;
+                        entry.links.push({
+                            file: "npm",
+                            link: "https://npmjs.com/package/"+entry.alias,
+                        });
                         break;
                     case "php2use":
                     case "laravel2use":
                     case "wordpress2use":
-                        entry.links["php"] = "https://packagist.org/packages/tayamino/"+entry.alias;
+                        entry.links.push({
+                            file: "web",
+                            link: "https://packagist.org/packages/tayamino/"+entry.alias,
+                        });
                         break;
                     case "network2use":
                     case "filesystem2use":
                     case "vocabular2use":
                     case "dataset2use":
+                        entry.links.push({
+                            file: "npm",
+                            link: "https://npmjs.com/package/"+entry.alias,
+                        });
                         //entry.links["python"] = "https://pypi.org/project/"+entry.alias;
-                        entry.links["nodejs"] = "https://npmjs.com/package/"+entry.alias;
                         //entry.links["php"] = "https://packagist.org/packages/tayamino/"+entry.alias;
                         break;
                     case "autobahn2use":
                     case "graphql2use":
                     case "linguist2use":
                     case "mosquitto2use":
+                        entry.links.push({
+                            file: "npm",
+                            link: "https://npmjs.com/package/"+entry.alias,
+                        });
                         //entry.links["python"] = "https://pypi.org/project/"+entry.alias;
-                        entry.links["nodejs"] = "https://npmjs.com/package/"+entry.alias;
                         //entry.links["php"] = "https://packagist.org/packages/tayamino/"+entry.alias;
                         break;
                 }
@@ -178,25 +193,25 @@ Site.services = {
                         break;
                 }
 
-                App.data.services.projects.push(entry);
+                App.data.ability.projects.push(entry);
             }
         }
     },
     load: function($) {
         // MixItUp plugin
         // http://mixitup.io
-        $('#serviceslist').mixitup({
+        $('#abilitylist').mixitup({
             targetSelector: '.portfolio',
             filterSelector: '.filter',
             effects: ['fade'],
             easing: 'snap',
             // call the hover effect
-            onMixEnd: Site.services.mixs()
+            onMixEnd: Site.ability.mixs()
         });
     },
     mixs: function() {
         // Simple parallax effect
-        $('#serviceslist .portfolio').hover(
+        $('#abilitylist .portfolio').hover(
                 function() {
                     $(this).find('.label').stop().animate({bottom: 0}, 200);
                     $(this).find('img').stop().animate({top: -30}, 500);
@@ -210,5 +225,6 @@ Site.services = {
     }
 };
 
-App.hook('init', Site.services.init);
-App.hook('load', Site.services.load);
+App.hook('init', Site.ability.init);
+App.hook('load', Site.ability.load);
+

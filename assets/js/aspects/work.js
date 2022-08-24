@@ -73,9 +73,7 @@ Site.working = {
                     label: categ,
                     title: listing[categ][i].title,
                     cover: '/images/working/'+listing[categ][i].alias+'.png',
-                    links: {
-                        web: listing[categ][i].rlink,
-                    },
+                    rlink: listing[categ][i].rlink,
                     cycle: listing[categ][i].cycle,
                 });
             }
