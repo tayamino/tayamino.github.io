@@ -60,7 +60,7 @@ Site.ability = {
             },{
                 cycle: "2018", alias: 'android2use', title: "Android 2 Use",
             },{
-                cycle: "2019", alias: 'chromeos2use', title: "Chrome OS 2 Use",
+                cycle: "2019", alias: 'chrome2use', title: "Chrome OS 2 Use",
             }],
             languages: [{
                 cycle: "2014", alias: 'python2use', title: "Python 2 Use",
@@ -107,7 +107,7 @@ Site.ability = {
 
         var mapping = {
             operating: 'library4nodejs', // 'system',
-            languages: 'library4nodejs', // 'runtime',
+            languages: 'framework', // 'runtime',
             platforms: 'library4nodejs', // 'platform',
             framework: 'framework', // 'framework',
         };
