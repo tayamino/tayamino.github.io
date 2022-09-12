@@ -65,7 +65,7 @@ Site.working = {
             var categ = App.data.working.category[j].name;
 
             for (var i=0 ; i<listing[categ].length ; i++) {
-                if (listing[categ][i].rlink!=null) {
+                if (!(listing[categ][i].rlink)) {
                     listing[categ][i].rlink = "http://"+listing[categ][i].alias+".herokuapp.com";
                 }
 
