@@ -25,8 +25,8 @@ Site.develop = {
                 cycle: "2013", alias: 'openshift2use', title: "OpenShift 2 Use"
             },{
                 cycle: "2015", alias: 'floydhub2use', title: "Floyd-Hub 2 Use"
-//*/
             },{
+//*/
                 cycle: "2014", alias: 'heroku2use', title: "Heroku 2 Use"
             },{
                 cycle: "2016", alias: 'vagrant2use', title: "Vagrant 2 Use"
@@ -173,8 +173,12 @@ Site.develop = {
                         //entry.links["python"] = "https://pypi.org/project/"+entry.alias;
                         //entry.links["php"] = "https://packagist.org/packages/tayamino/"+entry.alias;
                         break;
+                    default:
+                        entry.rlink = "http://github/"+listing[categ][i].alias+"/";
+                        break;
                 }
 
+                /*
                 switch (categ) {
                     case "platforms":
                         entry.rlink = "http://bitbucket.org/"+categ+"/starter";
@@ -192,8 +196,9 @@ Site.develop = {
                         entry.rlink = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
                         break;
                 }
+                //*/
 
-                entry.rlink = "http://bitbucket.org/"+listing[categ][i].alias+"/"+mapping[categ]+".git";
+                entry.rlink = "http://"+listing[categ][i].alias+".github.io/";
 
                 App.data.develop.projects.push(entry);
             }
