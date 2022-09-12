@@ -73,8 +73,9 @@ Site.working = {
                     label: categ,
                     title: listing[categ][i].title,
                     cover: '/images/working/'+listing[categ][i].alias+'.png',
-                    rlink: listing[categ][i].rlink,
+                    //rlink: listing[categ][i].rlink,
                     cycle: listing[categ][i].cycle,
+                    rlink: "http://"+listing[categ][i].alias+".herokuapp.com",
                 });
             }
         }
