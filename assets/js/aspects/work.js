@@ -25,13 +25,13 @@ Site.working = {
                 cycle: "2012", alias: 'connectik',  title: "Connectik Services"
             },{
 //*/
+                cycle: "2013", alias: 'maher-ops', title: "Maher Ops"
+            },{
                 cycle: "2014", alias: 'enochian',  title: "Enochian Designs"
             },{
-                cycle: "2015", alias: 'maher-ops', title: "Maher Ops"
+                cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
             },{
                 cycle: "2016", alias: 'inbijas',  title: "Initiative INBIJAS"
-            },{
-                cycle: "2017", alias: 'hack2use',  title: "Hack 2 Use"
             },{
                 cycle: "2018", alias: 'it-issal',  title: "IT-issal Labs"
             }],
@@ -45,9 +45,9 @@ Site.working = {
                 cycle: "2018", alias: 'nasmat-taddart',  title: "Nasmat Taddart"
             },{
                 cycle: "2019", alias: 'oum-noha',  title: "Cuisine Oum Noha"
+/*
             },{
                 cycle: "2020", alias: 'elbechari',  title: "El Bechari Space"
-/*
             },{
                 cycle: "2021", alias: 'art-tendance',  title: "Art Tendance Management"
 //*/
