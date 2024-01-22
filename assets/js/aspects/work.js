@@ -21,10 +21,8 @@ Site.working = {
 
         var listing = {
             agency: [{
-/*
                 cycle: "2012", alias: 'connectik',  title: "Connectik Services"
             },{
-//*/
                 cycle: "2013", alias: 'maher-ops', title: "Maher Ops"
             },{
                 cycle: "2014", alias: 'enochian',  title: "Enochian Designs"
@@ -32,17 +30,23 @@ Site.working = {
                 cycle: "2015", alias: 'hack2use',  title: "Hack 2 Use"
             },{
                 cycle: "2016", alias: 'inbijas',  title: "Initiative INBIJAS"
+/*
             },{
                 cycle: "2018", alias: 'it-issal',  title: "IT-issal Labs"
+//*/
             }],
             espace: [{
+                cycle: "2013", alias: 'univers',  title: "CosmiGate"
+            },{
+/*
                 cycle: "2014", alias: 'decotaz',  title: "Ateliers DECOTAZ"
             },{
                 cycle: "2015", alias: 'cafe-factory',  title: "Café Factory"
             },{
                 cycle: "2016", alias: 'park-adventure',  title: "Park Adventure"
             },{
-                cycle: "2018", alias: 'nasmat-taddart',  title: "Nasmat Taddart"
+//*/
+                cycle: "2018", alias: 'taddart',  title: "Nasmat Taddart"
             },{
                 cycle: "2019", alias: 'oum-noha',  title: "Cuisine Oum Noha"
 /*
@@ -53,11 +57,19 @@ Site.working = {
 //*/
             }],
             person: [{
+                cycle: "2012", alias: 'wizard',  title: "Cosmic Oz"
+            },{
+                cycle: "2012", alias: 'samurai',  title: "IT-Samurai Squad"
+            },{
+                cycle: "2013", alias: 'phynobi',  title: "Python Shinobi"
 /*
+            },{
                 cycle: "2015", alias: 'tayaa-med-sghir',  title: "TAYAA Med Sghir"
             },{
-//*/
                 cycle: "2016", alias: 'lachhab-karim',    title: "Karim LACHHAB"
+//*/
+            },{
+                cycle: "2021", alias: 'art-tendance',  title: "Art Tendance Management"
             }],
         };
 
@@ -66,7 +78,7 @@ Site.working = {
 
             for (var i=0 ; i<listing[categ].length ; i++) {
                 if (!(listing[categ][i].rlink)) {
-                    listing[categ][i].rlink = "http://"+listing[categ][i].alias+".herokuapp.com";
+                    listing[categ][i].rlink = "http://"+listing[categ][i].alias+".tayaa.me";
                 }
 
                 App.data.working.projects.push({
@@ -75,10 +87,10 @@ Site.working = {
                     cover: '/images/working/'+listing[categ][i].alias+'.png',
                     //rlink: listing[categ][i].rlink,
                     cycle: listing[categ][i].cycle,
-                    rlink: "http://"+listing[categ][i].alias+".herokuapp.com",
+                    rlink: "http://"+listing[categ][i].alias+".tayaa.me",
                 });
             }
-        }
+        }-
     },
     load: function($) {
         // MixItUp plugin
