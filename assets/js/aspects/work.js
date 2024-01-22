@@ -90,7 +90,7 @@ Site.working = {
                     rlink: "http://"+listing[categ][i].alias+".tayaa.me",
                 });
             }
-        }-
+        }
     },
     load: function($) {
         // MixItUp plugin
